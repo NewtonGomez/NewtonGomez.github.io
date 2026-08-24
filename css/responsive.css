@@ -8,15 +8,49 @@
 }
 
 @media (max-width: 600px) {
-  .nav-links { display: none; } /* Could be expanded with a JS toggler for mobile */
-  .mobile-menu-btn { display: block; }
-  .matrix-grid, .metrics-grid, .philosophy-grid { grid-template-columns: 1fr; }
-  .hero-title { font-size: 2.2rem; }
-  .hero-visual { display: none; } /* Conserve vertical space on mobile */
+  /* 1. Menú Edge-to-Edge */
+  .nav-links { 
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Empieza exactamente donde termina la línea del navbar */
+    left: -1.5rem; /* Compensamos el padding izquierdo del navbar */
+    width: calc(100% + 3rem); /* Sumamos el padding de ambos lados para ocupar toda la pantalla */
+    background-color: var(--bg-color);
+    padding: 1.5rem 2rem; /* Espaciado interno más amplio */
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 15px 20px -10px rgba(0,0,0,0.08); /* Sombra suave hacia abajo */
+    align-items: flex-start;
+    gap: 1.5rem;
+    z-index: 999;
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  /* 2. Área de toque (Tap Target) mejorada para los enlaces en móvil */
+  .nav-links a, #theme-toggle {
+    width: 100%;
+    padding: 0.25rem 0;
+    font-size: 1.1rem;
+    justify-content: flex-start;
+  }
+
+  /* 3. Estilo del botón "Menu" */
+  .mobile-menu-btn { 
+    display: block; 
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+  }
+  
+  /* 4. Ajustes tipográficos para que el Hero se vea editorial en iPhone */
+  .hero-title { font-size: 2.1rem; letter-spacing: -0.04em; }
+  .hero-subtitle { font-size: 1.1rem; line-height: 1.4; }
+  .hero-description { font-size: 1rem; }
+  
+  .hero-visual { display: none; }
   .contact-links { flex-direction: column; gap: 1.5rem; }
   .section { padding: 4rem 1.5rem; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, ::before, ::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
 }
