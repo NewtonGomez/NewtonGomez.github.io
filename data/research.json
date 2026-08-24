@@ -1,0 +1,42 @@
+{
+  "title": "Graph Neural Networks for Automatic Sleep Staging",
+  "subtitle": "M.Sc. Artificial Intelligence — Thesis Research (In Development)",
+  "description": "Investigating how functional graph representations and copula functions can improve model generalization across different EEG acquisition setups.",
+  "connection": "This research bridges biomedical signal processing with the computational rigor of my software engineering projects. It aims to apply the robust statistical validation seen in EvoBench, the numerical methods of Pixiter, and the machine learning pipelines of MNIST Bench to solve complex domain shift challenges in clinical AI.",
+  "problem": {
+    "heading": "01 / THE PROBLEM",
+    "description": "Current EEG models often overfit to specific physical topologies. They struggle to generalize when facing domain shifts caused by clinical variability:",
+    "points": [
+      "Different channel counts (e.g., 2 vs 19 channels)",
+      "Varying electrode montages",
+      "Heterogeneous acquisition hardware"
+    ]
+  },
+  "approach": {
+    "heading": "02 / THE APPROACH",
+    "description": "The proposed methodology aims to map physical sensors into a dynamic functional topology, making the GNN less dependent on a fixed spatial layout.",
+    "points": [
+      "Nodes: Channels described by Higuchi Fractal Dimension (HFD)",
+      "Edges: Functional connectivity via PLV & PAC",
+      "Modeling: Gaussian copulas for nonlinear multivariate dependencies"
+    ]
+  },
+  "validation": {
+    "heading": "03 / THE VALIDATION",
+    "description": "Planned experimental design to evaluate topology-invariance and model generalization across diverse cohorts:",
+    "points": [
+      "Datasets: Sleep-EDF, ISRUC-Sleep, MASS SS2",
+      "Testing: Topological ablation (stress testing)",
+      "Metrics: LOSO CV, Macro-F1, Cohen's Kappa"
+    ]
+  },
+  "flow": [
+    "EEG",
+    "Signal Features",
+    "Functional Connectivity",
+    "Graph Representation",
+    "Copula Dependency Modeling",
+    "GNN Message Passing",
+    "Sleep Stage Classification"
+  ]
+}

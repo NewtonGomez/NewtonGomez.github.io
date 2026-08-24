@@ -1,0 +1,133 @@
+{
+  "name": "Enrique Gómez",
+  "shortName": "EG.",
+  "role": "Scientific Software Engineer",
+  "subtitle": "Machine Learning · Biomedical Computing",
+  "location": "Aguascalientes, México",
+  "email": "ing.enrique_gomez@outlook.com",
+  "github": "https://github.com/NewtonGomez",
+  "pypi": [
+    {
+      "name": "EEEA-Py",
+      "url": "https://pypi.org/project/eeea-py/"
+    },
+    {
+      "name": "EvoBench",
+      "url": "https://pypi.org/project/evobench-lib/"
+    }
+  ],
+  "cv": "",
+  "bio": "Ingeniero Biomédico y Scientific Software Developer con experiencia en software científico, bioseñales, sistemas embebidos e integración hardware-software. Desarrollo soluciones reproducibles en Python para adquisición y procesamiento de señales, Machine Learning, optimización y métodos numéricos, con experiencia en validación cruzada, análisis estadístico, pruebas automatizadas, documentación técnica, empaquetado y publicación de librerías en PyPI.",
+  "professionalPositioning": "Trabajo en la intersección de la ingeniería biomédica, el cómputo científico y el aprendizaje automático, desarrollando software reproducible y herramientas computacionales para investigación y aplicaciones biomédicas.",
+  "education": [
+    {
+      "degree": "Maestría en Ciencias con opciones a Computación y Matemáticas Aplicadas",
+      "institution": "Universidad Autónoma de Aguascalientes",
+      "period": "2025 - Presente",
+      "focus": "Inteligencia Artificial"
+    },
+    {
+      "degree": "Licenciatura en Ingeniería Biomédica",
+      "institution": "Universidad Autónoma de Aguascalientes",
+      "period": "2017 - 2022"
+    }
+  ],
+  "currentFocus": [
+    "Artificial Intelligence",
+    "Scientific Computing",
+    "Machine Learning",
+    "Biomedical Computing",
+    "EEG",
+    "Graph Neural Networks",
+    "Sleep Stage Classification"
+  ],
+  "research": {
+    "title": "Clasificación de etapas del sueño mediante una arquitectura de redes neuronales de grafos enriquecida con funciones cópula",
+    "status": "Tesis en desarrollo",
+    "datasets": [
+      "Sleep-EDF",
+      "MASS",
+      "ISRUC-Sleep"
+    ],
+    "topics": [
+      "EEG",
+      "Functional Connectivity",
+      "Graph Neural Networks",
+      "Copula Functions",
+      "Sleep Stage Classification",
+      "Reproducible Machine Learning"
+    ]
+  },
+  "skills": {
+    "languages": [
+      "Python",
+      "C++",
+      "Java",
+      "MATLAB",
+      "SQL"
+    ],
+    "scientificComputing": [
+      "NumPy",
+      "SciPy",
+      "Pandas",
+      "Matplotlib"
+    ],
+    "machineLearning": [
+      "scikit-learn",
+      "MLP",
+      "SVM",
+      "PCA",
+      "Graph Neural Networks",
+      "MLX"
+    ],
+    "softwareEngineering": [
+      "Object-Oriented Programming",
+      "Modular Architecture",
+      "Pytest",
+      "Git",
+      "GitHub",
+      "pyproject.toml",
+      "Python Packaging",
+      "PyPI",
+      "API Development"
+    ],
+    "biomedical": [
+      "EEG",
+      "EMG",
+      "ECG",
+      "Digital Signal Processing",
+      "Bioinstrumentation"
+    ],
+    "embedded": [
+      "PySerial",
+      "USART",
+      "Sockets",
+      "Threading",
+      "Sensors",
+      "Radiofrequency",
+      "Actuators"
+    ]
+  },
+  "languages": [
+    {
+      "language": "Español",
+      "level": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "level": "B2"
+    },
+    {
+      "language": "Chino mandarín",
+      "level": "Preparación para certificación HSK 1"
+    }
+  ],
+  "contactLinks": {
+    "github": "https://github.com/NewtonGomez",
+    "pypi": [
+      "https://pypi.org/project/eeea-py/",
+      "https://pypi.org/project/evobench-lib/"
+    ],
+    "linkedin": "https://www.linkedin.com/in/enrique-gomez-102538240/?locale=es"
+  }
+}

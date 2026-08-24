@@ -1,0 +1,85 @@
+{
+  "featuredRepositories": ["eeea-crosslang-bench", "evobench-lib", "mnist_bench", "Interpolacion-de-Imagenes"],
+  "excludedRepositories": ["NewtonGomez.github.io", "mkproject", "mkalias"],
+  "featuredProjects": [
+    {
+      "id": "eeea-py",
+      "name": "EEEA-Py",
+      "isHero": true,
+      "category": "Scientific Python / Optimization",
+      "description": "Led modular architecture and testing for a library featuring EES, EMNA, PSO, and GWO algorithms.",
+      "technologies": ["Python", "NumPy", "SciPy", "Pytest", "PyPI"],
+      "evidence": {
+        "title": "EXPERIMENTAL EVIDENCE",
+        "context": "Cross-language benchmark comparing Python and R implementations of the EES algorithm across 30 experimental runs.",
+        "type": "metrics",
+        "items": [
+          {"value": "2.5×", "label": "faster execution"},
+          {"value": "30", "label": "runs per experiment"},
+          {"value": "p = 0.8418", "label": "Mann-Whitney U"}
+        ]
+      },
+      "github": "https://github.com/NewtonGomez/eeea-crosslang-bench",
+      "pypi": "https://pypi.org/project/eeea-py/"
+    },
+    {
+      "id": "evobench",
+      "name": "EvoBench",
+      "isHero": false,
+      "category": "Evolutionary Algorithm Framework",
+      "description": "Python framework for benchmarking evolutionary algorithms against classic n-dimensional test functions.",
+      "technologies": ["Python", "PyPI"],
+      "evidence": {
+        "title": "EXPERIMENTAL CAPABILITIES",
+        "type": "capabilities",
+        "items": ["EDA", "PSO", "ABC", "benchmark functions", "experimental engine", "statistical analysis", "30-run experimental design"]
+      },
+      "github": "https://github.com/NewtonGomez/evobench-lib",
+      "pypi": "https://pypi.org/project/evobench-lib/"
+    },
+    {
+      "id": "sleep-staging-gnn",
+      "name": "Sleep Staging GNN",
+      "isHero": false,
+      "category": "Research Project",
+      "description": "Methodology for automatic sleep stage classification modeling functional connectivity and nonlinear multivariate dependencies.",
+      "technologies": ["Copula Functions", "MLX"],
+      "evidence": {
+        "title": "METHODOLOGY",
+        "type": "flow",
+        "items": ["EEG", "Functional Connectivity", "Graph Construction", "GNN", "Sleep Stage Classification"]
+      },
+      "github": "",
+      "pypi": ""
+    },
+    {
+      "id": "mnist-bench",
+      "name": "MNIST Bench",
+      "isHero": false,
+      "category": "Machine Learning",
+      "description": "Experimental comparison utilizing a reproducible pipeline.",
+      "technologies": ["Python", "Scikit-learn"],
+      "evidence": {
+        "title": "10-fold stratified cross-validation",
+        "type": "comparison",
+        "items": [
+          {"model": "MLP", "score": "96.72%"},
+          {"model": "SVC", "score": "88.16%"}
+        ],
+        "footer": ["p < 0.001 paired t-test", "Bootstrap validation: 95%"]
+      },
+      "github": "https://github.com/NewtonGomez/mnist_bench",
+      "pypi": ""
+    },
+    {
+      "id": "pixiter",
+      "name": "Pixiter",
+      "isHero": false,
+      "category": "Scientific Computing",
+      "description": "Image interpolation comparing global Lagrange with local planes, demonstrating superior numerical stability.",
+      "technologies": ["Python", "Numerical Methods", "Image Processing"],
+      "github": "https://github.com/NewtonGomez/Interpolacion-de-Imagenes",
+      "pypi": ""
+    }
+  ]
+}

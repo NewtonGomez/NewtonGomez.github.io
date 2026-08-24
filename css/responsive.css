@@ -1,0 +1,22 @@
+@media (max-width: 900px) {
+  .hero-section { grid-template-columns: 1fr; gap: 2rem; padding: 4rem 1.5rem 2rem; }
+  .hero-title { font-size: 2.5rem; }
+  .about-grid, .research-container, .stack-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .matrix-grid, .metrics-grid, .philosophy-grid { grid-template-columns: repeat(2, 1fr); }
+  .project-card.hero-project { grid-template-columns: 1fr; gap: 1.5rem; }
+  .projects-grid, .github-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .nav-links { display: none; } /* Could be expanded with a JS toggler for mobile */
+  .mobile-menu-btn { display: block; }
+  .matrix-grid, .metrics-grid, .philosophy-grid { grid-template-columns: 1fr; }
+  .hero-title { font-size: 2.2rem; }
+  .hero-visual { display: none; } /* Conserve vertical space on mobile */
+  .contact-links { flex-direction: column; gap: 1.5rem; }
+  .section { padding: 4rem 1.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
