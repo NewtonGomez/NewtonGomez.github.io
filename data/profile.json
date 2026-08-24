@@ -17,7 +17,7 @@
     }
   ],
   "cv": "",
-  "bio": "Ingeniero Biomédico y Scientific Software Developer con experiencia en software científico, bioseñales, sistemas embebidos e integración hardware-software. Desarrollo soluciones reproducibles en Python para adquisición y procesamiento de señales, Machine Learning, optimización y métodos numéricos, con experiencia en validación cruzada, análisis estadístico, pruebas automatizadas, documentación técnica, empaquetado y publicación de librerías en PyPI.",
+  "bio": "Ingeniero Biomédico y Scientific Software Developer con experiencia en software científico, bioseñales, sistemas embebidos e integración hardware-software. Desarrollo soluciones en Python para adquisición y procesamiento de señales, Machine Learning, optimización y métodos numéricos, con experiencia en validación cruzada, análisis estadístico, pruebas automatizadas, documentación técnica, empaquetado y publicación de librerías en PyPI.",
   "professionalPositioning": "Trabajo en la intersección de la ingeniería biomédica, el cómputo científico y el aprendizaje automático, desarrollando software reproducible y herramientas computacionales para investigación y aplicaciones biomédicas.",
   "education": [
     {
@@ -55,7 +55,7 @@
       "Graph Neural Networks",
       "Copula Functions",
       "Sleep Stage Classification",
-      "Reproducible Machine Learning"
+      "Machine Learning"
     ]
   },
   "skills": {
