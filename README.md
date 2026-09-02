@@ -111,7 +111,7 @@ This portfolio is configured for [**GitHub Pages**](https://newtongomez.github.i
 **Enrique Gómez**
 
 * Scientific Software Engineer | Machine Learning | Biomedical Computing
-* GitHub: [@NewtonGomez](https://www.google.com/search?q=https://github.com/NewtonGomez)
-* PyPI: [NewtonGomez](https://www.google.com/search?q=https://pypi.org/user/NewtonGomez/)
+* GitHub: [@NewtonGomez](https://github.com/NewtonGomez)
+* PyPI: [NewtonGomez](https://pypi.org/user/NewtonGomez/)
 
 * Location: Aguascalientes, Mexico

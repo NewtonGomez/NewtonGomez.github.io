@@ -49,6 +49,11 @@
 
 .research-connection { border-left: 2px solid var(--text-primary); padding-left: 1.5rem; margin-top: 2rem; color: var(--text-secondary); font-style: italic; font-size: 0.95rem; line-height: 1.6; }
 
+.research-advisors { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 4px; padding: 1.5rem 2rem; max-width: 800px; }
+.research-advisors-list { list-style: none; font-size: 0.85rem; color: var(--text-primary); line-height: 1.8; margin-bottom: 0.75rem; }
+.research-advisors-affiliation { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
+.research-advisors-linked { font-size: 0.75rem; color: var(--text-secondary); }
+
 .research-levels-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
 .research-block { background: var(--surface-color); border: 1px solid var(--border-color); padding: 2rem; border-radius: 4px; display: flex; flex-direction: column; }
 .research-block-heading { font-size: 0.85rem; margin-bottom: 1rem; color: var(--text-secondary); border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }

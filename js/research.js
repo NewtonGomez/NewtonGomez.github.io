@@ -33,11 +33,49 @@ async function loadResearchData() {
         headerDiv.append(title, subtitle, desc, connection);
         container.appendChild(headerDiv);
 
-        // 2. Three Levels Grid (Problem, Approach, Validation)
+        // 1b. Advisors & Institutional Affiliation
+        if (data.advisors) {
+            const advisorsDiv = document.createElement('div');
+            advisorsDiv.className = 'research-advisors';
+
+            const advHeading = document.createElement('h4');
+            advHeading.className = 'research-block-heading mono-text';
+            advHeading.textContent = data.advisors.heading;
+
+            const advList = document.createElement('ul');
+            advList.className = 'research-advisors-list mono-text';
+
+            const directorLi = document.createElement('li');
+            directorLi.textContent = `Director: ${data.advisors.director}`;
+            advList.appendChild(directorLi);
+
+            if (data.advisors.codirector) {
+                const codirectorLi = document.createElement('li');
+                codirectorLi.textContent = `Co-director: ${data.advisors.codirector}`;
+                advList.appendChild(codirectorLi);
+            }
+
+            const affiliationP = document.createElement('p');
+            affiliationP.className = 'research-advisors-affiliation';
+            affiliationP.textContent = data.advisors.affiliation;
+
+            advisorsDiv.append(advHeading, advList, affiliationP);
+
+            if (data.advisors.linkedProject) {
+                const linkedP = document.createElement('p');
+                linkedP.className = 'research-advisors-linked mono-text';
+                linkedP.textContent = data.advisors.linkedProject;
+                advisorsDiv.appendChild(linkedP);
+            }
+
+            container.appendChild(advisorsDiv);
+        }
+
+        // 2. Levels Grid (Problem, Approach, Validation, Dissemination)
         const levelsGrid = document.createElement('div');
         levelsGrid.className = 'research-levels-grid';
 
-        const sections = [data.problem, data.approach, data.validation];
+        const sections = [data.problem, data.approach, data.validation, data.dissemination].filter(Boolean);
         sections.forEach(sec => {
             const block = document.createElement('div');
             block.className = 'research-block';

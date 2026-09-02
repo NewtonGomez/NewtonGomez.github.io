@@ -1,5 +1,5 @@
 {
-  "featuredRepositories": ["eeea-crosslang-bench", "evobench-lib", "mnist_bench", "Interpolacion-de-Imagenes"],
+  "featuredRepositories": ["eeea-crosslang-bench", "evobench-lib", "mnist_bench", "ShapeMetrics-Interface"],
   "excludedRepositories": ["NewtonGomez.github.io", "mkproject", "mkalias"],
   "featuredProjects": [
     {
@@ -7,16 +7,16 @@
       "name": "EEEA-Py",
       "isHero": true,
       "category": "Scientific Python / Optimization",
-      "description": "Led modular architecture and testing for a library featuring EES, EMNA, PSO, and GWO algorithms.",
+      "description": "Led modular architecture, test suite, and the Python-vs-R benchmark study for a package implementing EES (Salinas-Gutiérrez & Muñoz Zavala, 2023) as a population-initialization strategy across EMNA, PSO, and GWO metaheuristics.",
       "technologies": ["Python", "NumPy", "SciPy", "Pytest", "PyPI"],
       "evidence": {
         "title": "EXPERIMENTAL EVIDENCE",
-        "context": "Cross-language benchmark comparing Python and R implementations of the EES algorithm across 30 experimental runs.",
+        "context": "Cross-language benchmark comparing Python and R implementations of EES across 30 independent runs (Sphere function, dim=10).",
         "type": "metrics",
         "items": [
-          {"value": "2.5×", "label": "faster execution"},
+          {"value": "2.5×", "label": "faster execution (p < 0.001)"},
           {"value": "30", "label": "runs per experiment"},
-          {"value": "p = 0.8418", "label": "Mann-Whitney U"}
+          {"value": "p = 0.8418", "label": "solution quality equivalence (Mann-Whitney U)"}
         ]
       },
       "github": "https://github.com/NewtonGomez/eeea-crosslang-bench",
@@ -38,37 +38,38 @@
       "pypi": "https://pypi.org/project/evobench-lib/"
     },
     {
-      "id": "sleep-staging-gnn",
-      "name": "Sleep Staging GNN",
-      "isHero": false,
-      "category": "Research Project",
-      "description": "Methodology for automatic sleep stage classification modeling functional connectivity and nonlinear multivariate dependencies.",
-      "technologies": ["Copula Functions", "MLX"],
-      "evidence": {
-        "title": "METHODOLOGY",
-        "type": "flow",
-        "items": ["EEG", "Functional Connectivity", "Graph Construction", "GNN", "Sleep Stage Classification"]
-      },
-      "github": "",
-      "pypi": ""
-    },
-    {
       "id": "mnist-bench",
       "name": "MNIST Bench",
       "isHero": false,
       "category": "Machine Learning",
-      "description": "Experimental comparison utilizing a reproducible pipeline.",
-      "technologies": ["Python", "Scikit-learn"],
+      "description": "Paired comparison of an MLX-based MLP and a scikit-learn One-vs-One SVM on a stratified 15k-sample subset of MNIST, using 10-fold cross-validation and formal hypothesis testing.",
+      "technologies": ["Python", "MLX", "Scikit-learn"],
       "evidence": {
-        "title": "10-fold stratified cross-validation",
+        "title": "10-fold stratified cross-validation (paired)",
         "type": "comparison",
         "items": [
-          {"model": "MLP", "score": "96.72%"},
-          {"model": "SVC", "score": "88.16%"}
+          {"model": "MLP (MLX)", "score": "96.72%"},
+          {"model": "SVC One-vs-One", "score": "88.16%"}
         ],
-        "footer": ["p < 0.001 paired t-test", "Bootstrap validation: 95%"]
+        "footer": ["Paired t-test: p < 0.001", "95% bootstrap CI: [0.081, 0.090]"]
       },
       "github": "https://github.com/NewtonGomez/mnist_bench",
+      "pypi": ""
+    },
+    {
+      "id": "sleep-staging-gnn",
+      "name": "Sleep Staging GNN",
+      "isHero": false,
+      "category": "Graduate Thesis · In Progress",
+      "status": "in-progress",
+      "description": "M.Sc. thesis proposal: a Graph Neural Network enriched with copula functions to classify sleep stages from EEG while remaining invariant to electrode montage. Advised by Dr. Rogelio Salinas Gutiérrez and Dra. Ivonne Bazán Trujillo, UAA.",
+      "technologies": ["Copula Functions", "GNN", "EEG", "PLV/PAC/HFD"],
+      "evidence": {
+        "title": "PROPOSED METHODOLOGY",
+        "type": "flow",
+        "items": ["EEG (Sleep-EDF, ISRUC, MASS)", "Functional Connectivity (PLV/PAC)", "Copula-weighted Graph", "GNN", "Sleep Stage Classification"]
+      },
+      "github": "",
       "pypi": ""
     },
     {
@@ -78,7 +79,7 @@
       "category": "Scientific Computing",
       "description": "Image interpolation comparing global Lagrange with local planes, demonstrating superior numerical stability.",
       "technologies": ["Python", "Numerical Methods", "Image Processing"],
-      "github": "https://github.com/NewtonGomez/Interpolacion-de-Imagenes",
+      "github": "https://github.com/NewtonGomez/ShapeMetrics-Interface",
       "pypi": ""
     }
   ]

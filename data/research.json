@@ -1,8 +1,15 @@
 {
   "title": "Graph Neural Networks for Automatic Sleep Staging",
-  "subtitle": "M.Sc. Artificial Intelligence — Thesis Research (In Development)",
+  "subtitle": "M.Sc. Artificial Intelligence — Thesis Proposal, UAA (Approved May 2026)",
   "description": "Investigating how functional graph representations and copula functions can improve model generalization across different EEG acquisition setups.",
-  "connection": "This research bridges biomedical signal processing with the computational rigor of my software engineering projects. It aims to apply the robust statistical validation seen in EvoBench, the numerical methods of Pixiter, and the machine learning pipelines of MNIST Bench to solve complex domain shift challenges in clinical AI.",
+  "advisors": {
+    "heading": "ADVISED BY",
+    "director": "Dr. Rogelio Salinas Gutiérrez",
+    "codirector": "Dra. Ivonne Bazán Trujillo",
+    "affiliation": "Cuerpo Académico de Probabilidad y Estadística Aplicada, Universidad Autónoma de Aguascalientes",
+    "linkedProject": "Registered under institutional research project PIM24-3 — Modelación estadística mediante funciones cópula"
+  },
+  "connection": "This thesis bridges biomedical signal processing with the same statistical rigor applied throughout my software engineering projects — hypothesis testing, cross-validation, and reproducible experimental design.",
   "problem": {
     "heading": "01 / THE PROBLEM",
     "description": "Current EEG models often overfit to specific physical topologies. They struggle to generalize when facing domain shifts caused by clinical variability:",
