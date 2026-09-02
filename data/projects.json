@@ -1,6 +1,16 @@
 {
-  "featuredRepositories": ["eeea-crosslang-bench", "evobench-lib", "mnist_bench", "ShapeMetrics-Interface"],
-  "excludedRepositories": ["NewtonGomez.github.io", "mkproject", "mkalias"],
+  "featuredRepositories": [
+    "eeea-crosslang-bench",
+    "evobench-lib",
+    "mnist_bench",
+    "ShapeMetrics-Interface",
+    "Interpolacion-de-Imagenes"
+  ],
+  "excludedRepositories": [
+    "NewtonGomez.github.io",
+    "mkproject",
+    "mkalias"
+  ],
   "featuredProjects": [
     {
       "id": "eeea-py",
@@ -8,15 +18,30 @@
       "isHero": true,
       "category": "Scientific Python / Optimization",
       "description": "Led modular architecture, test suite, and the Python-vs-R benchmark study for a package implementing EES (Salinas-Gutiérrez & Muñoz Zavala, 2023) as a population-initialization strategy across EMNA, PSO, and GWO metaheuristics.",
-      "technologies": ["Python", "NumPy", "SciPy", "Pytest", "PyPI"],
+      "technologies": [
+        "Python",
+        "NumPy",
+        "SciPy",
+        "Pytest",
+        "PyPI"
+      ],
       "evidence": {
         "title": "EXPERIMENTAL EVIDENCE",
         "context": "Cross-language benchmark comparing Python and R implementations of EES across 30 independent runs (Sphere function, dim=10).",
         "type": "metrics",
         "items": [
-          {"value": "2.5×", "label": "faster execution (p < 0.001)"},
-          {"value": "30", "label": "runs per experiment"},
-          {"value": "p = 0.8418", "label": "solution quality equivalence (Mann-Whitney U)"}
+          {
+            "value": "2.5×",
+            "label": "faster execution (p < 0.001)"
+          },
+          {
+            "value": "30",
+            "label": "runs per experiment"
+          },
+          {
+            "value": "p = 0.8418",
+            "label": "solution quality equivalence (Mann-Whitney U)"
+          }
         ]
       },
       "github": "https://github.com/NewtonGomez/eeea-crosslang-bench",
@@ -28,11 +53,22 @@
       "isHero": false,
       "category": "Evolutionary Algorithm Framework",
       "description": "Python framework for benchmarking evolutionary algorithms against classic n-dimensional test functions.",
-      "technologies": ["Python", "PyPI"],
+      "technologies": [
+        "Python",
+        "PyPI"
+      ],
       "evidence": {
         "title": "EXPERIMENTAL CAPABILITIES",
         "type": "capabilities",
-        "items": ["EDA", "PSO", "ABC", "benchmark functions", "experimental engine", "statistical analysis", "30-run experimental design"]
+        "items": [
+          "EDA",
+          "PSO",
+          "ABC",
+          "benchmark functions",
+          "experimental engine",
+          "statistical analysis",
+          "30-run experimental design"
+        ]
       },
       "github": "https://github.com/NewtonGomez/evobench-lib",
       "pypi": "https://pypi.org/project/evobench-lib/"
@@ -43,15 +79,28 @@
       "isHero": false,
       "category": "Machine Learning",
       "description": "Paired comparison of an MLX-based MLP and a scikit-learn One-vs-One SVM on a stratified 15k-sample subset of MNIST, using 10-fold cross-validation and formal hypothesis testing.",
-      "technologies": ["Python", "MLX", "Scikit-learn"],
+      "technologies": [
+        "Python",
+        "MLX",
+        "Scikit-learn"
+      ],
       "evidence": {
         "title": "10-fold stratified cross-validation (paired)",
         "type": "comparison",
         "items": [
-          {"model": "MLP (MLX)", "score": "96.72%"},
-          {"model": "SVC One-vs-One", "score": "88.16%"}
+          {
+            "model": "MLP (MLX)",
+            "score": "96.72%"
+          },
+          {
+            "model": "SVC One-vs-One",
+            "score": "88.16%"
+          }
         ],
-        "footer": ["Paired t-test: p < 0.001", "95% bootstrap CI: [0.081, 0.090]"]
+        "footer": [
+          "Paired t-test: p < 0.001",
+          "95% bootstrap CI: [0.081, 0.090]"
+        ]
       },
       "github": "https://github.com/NewtonGomez/mnist_bench",
       "pypi": ""
@@ -63,22 +112,72 @@
       "category": "Graduate Thesis · In Progress",
       "status": "in-progress",
       "description": "M.Sc. thesis proposal: a Graph Neural Network enriched with copula functions to classify sleep stages from EEG while remaining invariant to electrode montage. Advised by Dr. Rogelio Salinas Gutiérrez and Dra. Ivonne Bazán Trujillo, UAA.",
-      "technologies": ["Copula Functions", "GNN", "EEG", "PLV/PAC/HFD"],
+      "technologies": [
+        "Copula Functions",
+        "GNN",
+        "EEG",
+        "PLV/PAC/HFD"
+      ],
       "evidence": {
         "title": "PROPOSED METHODOLOGY",
         "type": "flow",
-        "items": ["EEG (Sleep-EDF, ISRUC, MASS)", "Functional Connectivity (PLV/PAC)", "Copula-weighted Graph", "GNN", "Sleep Stage Classification"]
+        "items": [
+          "EEG (Sleep-EDF, ISRUC, MASS)",
+          "Functional Connectivity (PLV/PAC)",
+          "Copula-weighted Graph",
+          "GNN",
+          "Sleep Stage Classification"
+        ]
       },
       "github": "",
+      "pypi": ""
+    }, 
+    {
+      "id": "image-interpolation",
+      "name": "Image Interpolation Methods",
+      "isHero": false,
+      "category": "Scientific Computing / Numerical Methods",
+      "description": "Comparative study evaluating Global Bilinear Lagrange, Local Bilinear Lagrange (2×2 planes), and a random baseline for image reconstruction on the Waterloo benchmark dataset (grayscale and color).",
+      "technologies": [
+        "Python",
+        "NumPy",
+        "OpenCV"
+      ],
+      "evidence": {
+        "title": "EXPERIMENTAL EVIDENCE",
+        "context": "Average relative reconstruction error (Euclidean/Frobenius norm) across 12 grayscale benchmark images. The initial hypothesis — that the global model would outperform the local one — was rejected: the global polynomial proved numerically unstable at this resolution.",
+        "type": "comparison",
+        "metric": "Relative error",
+        "items": [
+          {
+            "model": "Global Bilinear Lagrange",
+            "score": "101.2% error (0.01s)"
+          },
+          {
+            "model": "Local Bilinear Planes",
+            "score": "34.69% error (0.09s)"
+          }
+        ],
+        "footer": [
+          "Random baseline: 80.33% error",
+          "Local model was the only numerically viable method"
+        ]
+      },
+      "github": "https://github.com/NewtonGomez/Interpolacion-de-Imagenes",
       "pypi": ""
     },
     {
       "id": "pixiter",
       "name": "Pixiter",
       "isHero": false,
-      "category": "Scientific Computing",
-      "description": "Image interpolation comparing global Lagrange with local planes, demonstrating superior numerical stability.",
-      "technologies": ["Python", "Numerical Methods", "Image Processing"],
+      "category": "Scientific Computing / Shape Analysis",
+      "description": "Desktop GUI for shape analysis using Freeman Chain Codes, including contour representation, geometric descriptors, and compact shape encoding. Co-authored with Victoria Galván for the course Nuevos Paradigmas Tecnológicos.",
+      "technologies": [
+        "Python",
+        "Freeman Chain Codes",
+        "Contour Analysis",
+        "GUI"
+      ],
       "github": "https://github.com/NewtonGomez/ShapeMetrics-Interface",
       "pypi": ""
     }

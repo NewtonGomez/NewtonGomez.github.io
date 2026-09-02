@@ -5,6 +5,10 @@
   .matrix-grid, .metrics-grid, .philosophy-grid { grid-template-columns: repeat(2, 1fr); }
   .project-card.hero-project { grid-template-columns: 1fr; gap: 1.5rem; }
   .projects-grid, .github-grid { grid-template-columns: 1fr; }
+  .research-levels-grid { grid-template-columns: 1fr; }
+  .research-advisors { max-width: 100%; }
+  .research-flow-container { flex-direction: column; align-items: stretch; }
+  .flow-node-arrow { transform: rotate(90deg); text-align: center; margin: 0.5rem 0; }
 }
 
 @media (max-width: 600px) {
@@ -52,5 +56,6 @@
   
   .hero-visual { display: none; }
   .contact-links { flex-direction: column; gap: 1.5rem; }
+  .research-advisors { padding: 1.25rem; }
   .section { padding: 4rem 1.5rem; }
 }

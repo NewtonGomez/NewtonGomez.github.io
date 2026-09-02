@@ -5,7 +5,8 @@ async function loadFeaturedProjects() {
         const data = await response.json();
         
         const grid = document.getElementById('featured-projects-grid');
-        grid.innerHTML = ''; 
+        if (!grid) return data;
+        grid.replaceChildren();
 
         data.featuredProjects.forEach(proj => {
             const article = document.createElement('article');
@@ -86,7 +87,7 @@ async function loadFeaturedProjects() {
                     const dataRow = document.createElement('div');
                     dataRow.className = 'comp-row';
                     const dAcc = document.createElement('span');
-                    dAcc.textContent = 'Accuracy';
+                    dAcc.textContent = proj.evidence.metric || 'Accuracy';
                     const dS1 = document.createElement('span');
                     dS1.textContent = proj.evidence.items[0].score;
                     const dS2 = document.createElement('span');
@@ -174,7 +175,14 @@ async function loadFeaturedProjects() {
         
         return data;
     } catch (error) {
-        console.error("Error loading projects data:", error);
+        console.error('Error loading projects data:', error);
+        const grid = document.getElementById('featured-projects-grid');
+        if (grid) {
+            const fallback = document.createElement('p');
+            fallback.className = 'mono-text';
+            fallback.textContent = 'Project information is currently unavailable.';
+            grid.replaceChildren(fallback);
+        }
         return { excludedRepositories: [], featuredRepositories: [] };
     }
 }

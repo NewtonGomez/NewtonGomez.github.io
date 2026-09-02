@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', async () => {
-    // 1. Cargar la data JSON (Curación Manual)
-    const configData = await loadFeaturedProjects();
-    // Cargar la sección de Research
-    await loadResearchData();
-    
-    // 2. Ejecutar la API de GitHub para inyectar "Latest Projects"
+    // Load independent JSON-backed sections in parallel.
+    const [configData] = await Promise.all([
+        loadFeaturedProjects(),
+        loadResearchData(),
+        loadProfileData()
+    ]);
+
+    // Use the curated project configuration to filter GitHub API results.
     await fetchLatestProjects(configData);
 });
