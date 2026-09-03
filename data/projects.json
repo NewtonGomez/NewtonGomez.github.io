@@ -4,7 +4,8 @@
     "evobench-lib",
     "mnist_bench",
     "ShapeMetrics-Interface",
-    "Interpolacion-de-Imagenes"
+    "Interpolacion-de-Imagenes",
+    "ecg-zebrafish"
   ],
   "excludedRepositories": [
     "NewtonGomez.github.io",
@@ -171,14 +172,66 @@
       "name": "Pixiter",
       "isHero": false,
       "category": "Scientific Computing / Shape Analysis",
-      "description": "Desktop GUI for shape analysis using Freeman Chain Codes, including contour representation, geometric descriptors, and compact shape encoding. Co-authored with Victoria Galván for the course Nuevos Paradigmas Tecnológicos.",
+      "description": "Desktop GUI for shape analysis using Freeman Chain Codes, including contour representation, geometric descriptors, information-theoretic analysis, compression, and shape reconstruction. Co-authored with Victoria Galván for the course Nuevos Paradigmas Tecnológicos.",
       "technologies": [
         "Python",
         "Freeman Chain Codes",
         "Contour Analysis",
         "GUI"
       ],
+      "evidence": {
+        "title": "SHAPE ANALYSIS CAPABILITIES",
+        "context": "ShapeMetrics-Interface v1.0 implements an end-to-end workflow for encoding, analyzing, compressing, storing, loading, and reconstructing 2D shapes from Freeman Chain Codes.",
+        "type": "capabilities",
+        "items": [
+          "5 chain-code variants: F4, F8, AF8, VCC, and 3OT",
+          "Contour extraction and binary shape reconstruction",
+          "Geometric descriptors: area, perimeter, compactness, and Euler characteristic",
+          "Shannon entropy and Huffman/arithmetic coding analysis",
+          "Chain-code persistence with metadata and histogram export"
+        ],
+        "footer": [
+          "Desktop GUI · Image processing · Information theory",
+          "v1.0.0 · Co-authored with Victoria Galván"
+        ]
+      },
       "github": "https://github.com/NewtonGomez/ShapeMetrics-Interface",
+      "pypi": ""
+    },
+    {
+      "id": "ecg-zebrafish",
+      "name": "Zebrafish ECG Acquisition & Analysis System",
+      "category": "Biomedical Engineering / Scientific Computing",
+      "description": "Bachelor’s thesis project focused on acquiring, transmitting, visualizing, storing, and analyzing electrocardiographic signals from zebrafish models. The system combines embedded acquisition, LAN/Wi-Fi communication, a Python desktop interface, real-time ECG visualization, BPM estimation, and digital filtering.",
+      "technologies": [
+        "Python",
+        "MicroPython",
+        "Tkinter",
+        "NumPy",
+        "pandas",
+        "Matplotlib",
+        "SciPy",
+        "TCP/IP Sockets",
+        "ESP8266",
+        "Digital Signal Processing"
+      ],
+      "evidence": {
+          "title": "SYSTEM CAPABILITIES",
+          "context": "Developed as a Bachelor's thesis in Biomedical Engineering for in vivo ECG acquisition and analysis in zebrafish cardiotoxicity studies.",
+          "type": "capabilities",
+          "items": [
+            "Real-time ECG signal acquisition and visualization",
+            "LAN/Wi-Fi client-server communication",
+            "BPM estimation from ECG peaks",
+            "CSV signal storage for later analysis",
+            "Configurable Butterworth digital filtering"
+          ],
+          "footer": [
+            "Bachelor’s thesis project",
+            "Embedded systems · Networking · GUI development · Biosignal processing"
+          ]
+        },
+      "github": "https://github.com/NewtonGomez/ECG-Zebrafish-",
       "pypi": ""
     }
   ]
