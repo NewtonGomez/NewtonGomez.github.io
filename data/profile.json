@@ -77,35 +77,65 @@
       "MLP",
       "SVM",
       "PCA",
-      "Graph Neural Networks",
+      {
+        "en": "Graph Neural Networks",
+        "es": "Redes Neuronales de Grafos"
+      },
       "MLX"
     ],
     "softwareEngineering": [
-      "Object-Oriented Programming",
-      "Modular Architecture",
+      {
+        "en": "Object-Oriented Programming",
+        "es": "Programación orientada a objetos"
+      },
+      {
+        "en": "Modular Architecture",
+        "es": "Arquitectura modular"
+      },
       "Pytest",
       "Git",
       "GitHub",
       "pyproject.toml",
-      "Python Packaging",
+      {
+        "en": "Python Packaging",
+        "es": "Empaquetado de Python"
+      },
       "PyPI",
-      "API Development"
+      {
+        "en": "API Development",
+        "es": "Desarrollo de API"
+      }
     ],
     "biomedical": [
       "EEG",
       "EMG",
       "ECG",
-      "Digital Signal Processing",
-      "Bioinstrumentation"
+      {
+        "en": "Digital Signal Processing",
+        "es": "Procesamiento digital de señales"
+      },
+      {
+        "en": "Bioinstrumentation",
+        "es": "Bioinstrumentación"
+      }
     ],
     "embedded": [
       "PySerial",
       "USART",
       "Sockets",
       "Threading",
-      "Sensors",
-      "Radiofrequency",
-      "Actuators"
+      {
+        "en": "Sensors",
+        "es": "Sensores"
+      },
+      {
+        "en": "Radiofrequency",
+        "es": "Radiofrecuencia"
+      },
+      {
+        "en": "Actuators",
+        "es": "Actuadores"
+      }
     ]
   },
   "languages": [

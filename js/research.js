@@ -18,14 +18,14 @@ async function loadResearchData() {
 
         // 1. Header & context
         const headerDiv = el('div', 'research-header');
-        const title = el('h3', 'research-title', data.title);
-        const subtitle = el('p', 'research-subtitle mono-text', data.subtitle);
-        const desc = el('p', 'research-desc', data.description);
+        const title = el('h3', 'research-title', localize(data.title));
+        const subtitle = el('p', 'research-subtitle mono-text', localize(data.subtitle));
+        const desc = el('p', 'research-desc', localize(data.description));
 
         headerDiv.append(title, subtitle, desc);
 
         if (data.connection) {
-            const connection = el('blockquote', 'research-connection', data.connection);
+            const connection = el('blockquote', 'research-connection', localize(data.connection));
             headerDiv.appendChild(connection);
         }
 
@@ -37,13 +37,13 @@ async function loadResearchData() {
             const advHeading = el(
                 'h4',
                 'research-block-heading mono-text',
-                data.advisors.heading
+                localize(data.advisors.heading)
             );
             const advList = el('ul', 'research-advisors-list mono-text');
 
             if (data.advisors.director) {
                 const directorLi = el('li');
-                const directorRole = el('strong', '', 'Director:');
+                const directorRole = el('strong', '', i18nGet('dynamic.director') || 'Director:');
                 directorLi.append(
                     directorRole,
                     document.createTextNode(` ${data.advisors.director}`)
@@ -53,7 +53,7 @@ async function loadResearchData() {
 
             if (data.advisors.codirector) {
                 const codirectorLi = el('li');
-                const codirectorRole = el('strong', '', 'Co-director:');
+                const codirectorRole = el('strong', '', i18nGet('dynamic.codirector') || 'Co-director:');
                 codirectorLi.append(
                     codirectorRole,
                     document.createTextNode(` ${data.advisors.codirector}`)
@@ -63,22 +63,22 @@ async function loadResearchData() {
 
             advisorsDiv.append(advHeading, advList);
 
-            if (data.advisors.affiliation) {
+            if (localize(data.advisors.affiliation)) {
                 advisorsDiv.appendChild(
                     el(
                         'p',
                         'research-advisors-affiliation',
-                        data.advisors.affiliation
+                        localize(data.advisors.affiliation)
                     )
                 );
             }
 
-            if (data.advisors.linkedProject) {
+            if (localize(data.advisors.linkedProject)) {
                 advisorsDiv.appendChild(
                     el(
                         'p',
                         'research-advisors-linked mono-text',
-                        data.advisors.linkedProject
+                        localize(data.advisors.linkedProject)
                     )
                 );
             }
@@ -102,14 +102,14 @@ async function loadResearchData() {
                 const heading = el(
                     'h4',
                     'research-block-heading mono-text',
-                    sec.heading
+                    localize(sec.heading)
                 );
-                const text = el('p', 'research-block-desc', sec.description);
+                const text = el('p', 'research-block-desc', localize(sec.description));
                 const list = el('ul', 'research-block-list mono-text');
 
                 if (Array.isArray(sec.points)) {
                     sec.points.forEach(point => {
-                        list.appendChild(el('li', '', point));
+                        list.appendChild(el('li', '', localize(point)));
                     });
                 }
 
@@ -123,10 +123,10 @@ async function loadResearchData() {
         // 3. Conceptual architecture flow
         if (Array.isArray(data.flow) && data.flow.length > 0) {
             const flowContainer = el('div', 'research-flow-container');
-            flowContainer.setAttribute('aria-label', 'Conceptual methodology flow');
+            flowContainer.setAttribute('aria-label', i18nGet('dynamic.conceptualFlow') || 'Conceptual methodology flow');
 
             data.flow.forEach((step, index) => {
-                const node = el('span', 'flow-node-box', step);
+                const node = el('span', 'flow-node-box', localize(step));
                 if (index === data.flow.length - 1) {
                     node.classList.add('highlight');
                 }
@@ -144,7 +144,7 @@ async function loadResearchData() {
     } catch (error) {
         console.error('Error loading research data:', error);
         container.replaceChildren(
-            el('p', 'mono-text', 'Research information is currently unavailable.')
+            el('p', 'mono-text', i18nGet('dynamic.researchUnavailable') || 'Research information is currently unavailable.')
         );
         return null;
     }

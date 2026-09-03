@@ -16,15 +16,15 @@ async function loadFeaturedProjects() {
             
             const type = document.createElement('span');
             type.className = 'project-type';
-            type.textContent = proj.category;
+            type.textContent = localize(proj.category);
             
             const title = document.createElement('h3');
             title.className = 'project-title';
-            title.textContent = proj.name;
+            title.textContent = localize(proj.name);
             
             const desc = document.createElement('p');
             desc.className = 'project-desc';
-            desc.textContent = proj.description;
+            desc.textContent = localize(proj.description);
             
             const techDiv = document.createElement('div');
             techDiv.className = 'project-tech mono-text';
@@ -41,17 +41,17 @@ async function loadFeaturedProjects() {
                 const evContainer = document.createElement('div');
                 evContainer.className = 'project-evidence';
 
-                if (proj.evidence.title) {
+                if (localize(proj.evidence.title)) {
                     const evTitle = document.createElement('h4');
                     evTitle.className = 'evidence-title';
-                    evTitle.textContent = proj.evidence.title;
+                    evTitle.textContent = localize(proj.evidence.title);
                     evContainer.appendChild(evTitle);
                 }
 
-                if (proj.evidence.context) {
+                if (localize(proj.evidence.context)) {
                     const evCtx = document.createElement('p');
                     evCtx.className = 'evidence-context';
-                    evCtx.textContent = proj.evidence.context;
+                    evCtx.textContent = localize(proj.evidence.context);
                     evContainer.appendChild(evCtx);
                 }
 
@@ -65,7 +65,7 @@ async function loadFeaturedProjects() {
                         mVal.textContent = item.value;
                         const mLab = document.createElement('span');
                         mLab.className = 'ev-metric-lab';
-                        mLab.textContent = item.label;
+                        mLab.textContent = localize(item.label);
                         mBox.append(mVal, mLab);
                         metricsGrid.appendChild(mBox);
                     });
@@ -87,11 +87,11 @@ async function loadFeaturedProjects() {
                     const dataRow = document.createElement('div');
                     dataRow.className = 'comp-row';
                     const dAcc = document.createElement('span');
-                    dAcc.textContent = proj.evidence.metric || 'Accuracy';
+                    dAcc.textContent = proj.evidence.metric ? localize(proj.evidence.metric) : (i18nGet('dynamic.accuracy') || 'Accuracy');
                     const dS1 = document.createElement('span');
-                    dS1.textContent = proj.evidence.items[0].score;
+                    dS1.textContent = localize(proj.evidence.items[0].score);
                     const dS2 = document.createElement('span');
-                    dS2.textContent = proj.evidence.items[1].score;
+                    dS2.textContent = localize(proj.evidence.items[1].score);
                     dataRow.append(dAcc, dS1, dS2);
 
                     compDiv.append(headerRow, dataRow);
@@ -102,7 +102,7 @@ async function loadFeaturedProjects() {
                         footerDiv.className = 'evidence-footer';
                         proj.evidence.footer.forEach(f => {
                             const fSpan = document.createElement('span');
-                            fSpan.textContent = f;
+                            fSpan.textContent = localize(f);
                             footerDiv.appendChild(fSpan);
                         });
                         evContainer.appendChild(footerDiv);
@@ -113,7 +113,7 @@ async function loadFeaturedProjects() {
                     capDiv.className = 'evidence-capabilities mono-text';
                     proj.evidence.items.forEach(item => {
                         const cap = document.createElement('span');
-                        cap.textContent = item;
+                        cap.textContent = localize(item);
                         capDiv.appendChild(cap);
                     });
                     evContainer.appendChild(capDiv);
@@ -121,11 +121,11 @@ async function loadFeaturedProjects() {
                 else if (proj.evidence.type === 'flow') {
                     const flowDiv = document.createElement('div');
                     flowDiv.className = 'evidence-flow mono-text';
-                    flowDiv.setAttribute('aria-label', 'Methodology flow');
+                    flowDiv.setAttribute('aria-label', i18nGet('dynamic.methodologyFlow') || 'Methodology flow');
                     proj.evidence.items.forEach((item, index) => {
                         const node = document.createElement('span');
                         node.className = 'ev-flow-node';
-                        node.textContent = item;
+                        node.textContent = localize(item);
                         flowDiv.appendChild(node);
                         
                         if (index < proj.evidence.items.length - 1) {
@@ -180,7 +180,7 @@ async function loadFeaturedProjects() {
         if (grid) {
             const fallback = document.createElement('p');
             fallback.className = 'mono-text';
-            fallback.textContent = 'Project information is currently unavailable.';
+            fallback.textContent = i18nGet('dynamic.projectUnavailable') || 'Project information is currently unavailable.';
             grid.replaceChildren(fallback);
         }
         return { excludedRepositories: [], featuredRepositories: [] };

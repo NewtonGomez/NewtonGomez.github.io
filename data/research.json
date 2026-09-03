@@ -1,49 +1,136 @@
 {
-  "title": "Graph Neural Networks for Automatic Sleep Staging",
-  "subtitle": "M.Sc. Artificial Intelligence — Thesis Proposal, UAA (Approved May 2026)",
-  "description": "Investigating how functional graph representations and copula functions can improve model generalization across different EEG acquisition setups.",
+  "title": {
+    "en": "Graph Neural Networks for Automatic Sleep Staging",
+    "es": "Redes Neuronales de Grafos para la Clasificación Automática de Etapas del Sueño"
+  },
+  "subtitle": {
+    "en": "M.Sc. Artificial Intelligence — Thesis Proposal, UAA (Approved May 2026)",
+    "es": "Maestría en Inteligencia Artificial — Propuesta de tesis, UAA (aprobada en mayo de 2026)"
+  },
+  "description": {
+    "en": "Investigating how functional graph representations and copula functions can improve model generalization across different EEG acquisition setups.",
+    "es": "Investigación sobre cómo las representaciones funcionales mediante grafos y las funciones cópula pueden mejorar la generalización del modelo entre distintas configuraciones de adquisición EEG."
+  },
   "advisors": {
-    "heading": "ADVISED BY",
+    "heading": {
+      "en": "ADVISED BY",
+      "es": "DIRIGIDA POR"
+    },
     "director": "Dr. Rogelio Salinas Gutiérrez",
     "codirector": "Dra. Ivonne Bazán Trujillo",
-    "affiliation": "Cuerpo Académico de Probabilidad y Estadística Aplicada, Universidad Autónoma de Aguascalientes",
-    "linkedProject": "Registered under institutional research project PIM24-3 — Modelación estadística mediante funciones cópula"
+    "affiliation": {
+      "en": "Cuerpo Académico de Probabilidad y Estadística Aplicada, Universidad Autónoma de Aguascalientes",
+      "es": "Cuerpo Académico de Probabilidad y Estadística Aplicada, Universidad Autónoma de Aguascalientes"
+    },
+    "linkedProject": {
+      "en": "Registered under institutional research project PIM24-3 — Modelación estadística mediante funciones cópula",
+      "es": "Registrada dentro del proyecto institucional de investigación PIM24-3 — Modelación estadística mediante funciones cópula"
+    }
   },
-  "connection": "This thesis bridges biomedical signal processing with the same statistical rigor applied throughout my software engineering projects — hypothesis testing, cross-validation, and reproducible experimental design.",
+  "connection": {
+    "en": "This thesis bridges biomedical signal processing with the same statistical rigor applied throughout my software engineering projects — hypothesis testing, cross-validation, and reproducible experimental design.",
+    "es": "Esta tesis integra el procesamiento de señales biomédicas con el mismo rigor estadístico aplicado en mis proyectos de ingeniería de software: pruebas de hipótesis, validación cruzada y diseño experimental reproducible."
+  },
   "problem": {
-    "heading": "01 / THE PROBLEM",
-    "description": "Current EEG models often overfit to specific physical topologies. They struggle to generalize when facing domain shifts caused by clinical variability:",
+    "heading": {
+      "en": "01 / THE PROBLEM",
+      "es": "01 / EL PROBLEMA"
+    },
+    "description": {
+      "en": "Current EEG models often overfit to specific physical topologies. They struggle to generalize when facing domain shifts caused by clinical variability:",
+      "es": "Los modelos EEG actuales suelen sobreajustarse a topologías físicas específicas. Presentan dificultades para generalizar ante cambios de dominio causados por la variabilidad clínica:"
+    },
     "points": [
-      "Different channel counts (e.g., 2 vs 19 channels)",
-      "Varying electrode montages",
-      "Heterogeneous acquisition hardware"
+      {
+        "en": "Different channel counts (e.g., 2 vs 19 channels)",
+        "es": "Diferentes cantidades de canales (p. ej., 2 frente a 19 canales)"
+      },
+      {
+        "en": "Varying electrode montages",
+        "es": "Distintos montajes de electrodos"
+      },
+      {
+        "en": "Heterogeneous acquisition hardware",
+        "es": "Hardware de adquisición heterogéneo"
+      }
     ]
   },
   "approach": {
-    "heading": "02 / THE APPROACH",
-    "description": "The proposed methodology aims to map physical sensors into a dynamic functional topology, making the GNN less dependent on a fixed spatial layout.",
+    "heading": {
+      "en": "02 / THE APPROACH",
+      "es": "02 / EL ENFOQUE"
+    },
+    "description": {
+      "en": "The proposed methodology aims to map physical sensors into a dynamic functional topology, making the GNN less dependent on a fixed spatial layout.",
+      "es": "La metodología propuesta busca mapear sensores físicos hacia una topología funcional dinámica, reduciendo la dependencia de la GNN respecto a una distribución espacial fija."
+    },
     "points": [
-      "Nodes: Channels described by Higuchi Fractal Dimension (HFD)",
-      "Edges: Functional connectivity via PLV & PAC",
-      "Modeling: Gaussian copulas for nonlinear multivariate dependencies"
+      {
+        "en": "Nodes: Channels described by Higuchi Fractal Dimension (HFD)",
+        "es": "Nodos: canales descritos mediante Dimensión Fractal de Higuchi (HFD)"
+      },
+      {
+        "en": "Edges: Functional connectivity via PLV & PAC",
+        "es": "Aristas: conectividad funcional mediante PLV y PAC"
+      },
+      {
+        "en": "Modeling: Gaussian copulas for nonlinear multivariate dependencies",
+        "es": "Modelado: cópulas gaussianas para dependencias multivariadas no lineales"
+      }
     ]
   },
   "validation": {
-    "heading": "03 / THE VALIDATION",
-    "description": "Planned experimental design to evaluate topology-invariance and model generalization across diverse cohorts:",
+    "heading": {
+      "en": "03 / THE VALIDATION",
+      "es": "03 / LA VALIDACIÓN"
+    },
+    "description": {
+      "en": "Planned experimental design to evaluate topology-invariance and model generalization across diverse cohorts:",
+      "es": "Diseño experimental propuesto para evaluar la invariancia topológica y la generalización del modelo entre cohortes diversas:"
+    },
     "points": [
-      "Datasets: Sleep-EDF, ISRUC-Sleep, MASS SS2",
-      "Testing: Topological ablation (stress testing)",
-      "Metrics: LOSO CV, Macro-F1, Cohen's Kappa"
+      {
+        "en": "Datasets: Sleep-EDF, ISRUC-Sleep, MASS SS2",
+        "es": "Datasets: Sleep-EDF, ISRUC-Sleep, MASS SS2"
+      },
+      {
+        "en": "Testing: Topological ablation (stress testing)",
+        "es": "Pruebas: ablación topológica (stress testing)"
+      },
+      {
+        "en": "Metrics: LOSO CV, Macro-F1, Cohen's Kappa",
+        "es": "Métricas: LOSO CV, Macro-F1, Kappa de Cohen"
+      }
     ]
   },
   "flow": [
-    "EEG",
-    "Signal Features",
-    "Functional Connectivity",
-    "Graph Representation",
-    "Copula Dependency Modeling",
-    "GNN Message Passing",
-    "Sleep Stage Classification"
+    {
+      "en": "EEG",
+      "es": "EEG"
+    },
+    {
+      "en": "Signal Features",
+      "es": "Características de señal"
+    },
+    {
+      "en": "Functional Connectivity",
+      "es": "Conectividad funcional"
+    },
+    {
+      "en": "Graph Representation",
+      "es": "Representación en grafo"
+    },
+    {
+      "en": "Copula Dependency Modeling",
+      "es": "Modelado de dependencias con cópulas"
+    },
+    {
+      "en": "GNN Message Passing",
+      "es": "Message Passing en GNN"
+    },
+    {
+      "en": "Sleep Stage Classification",
+      "es": "Clasificación de etapas del sueño"
+    }
   ]
 }
