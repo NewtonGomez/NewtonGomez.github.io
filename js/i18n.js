@@ -56,11 +56,10 @@ function applyStaticTranslations(language = currentLanguage) {
     const ogDescriptionMeta = document.querySelector('meta[property="og:description"]');
     if (ogDescriptionMeta && ogDescription) ogDescriptionMeta.setAttribute('content', ogDescription);
 
-    const languageToggle = document.getElementById('language-toggle');
-    if (languageToggle) {
+    document.querySelectorAll('#language-toggle, .mobile-language-toggle').forEach(languageToggle => {
         languageToggle.textContent = language === 'en' ? 'ES' : 'EN';
         languageToggle.setAttribute('aria-label', i18nGet('nav.languageAria', language) || 'Change language');
-    }
+    });
 }
 
 async function initI18n() {
@@ -89,5 +88,7 @@ function toggleLanguage() {
 }
 
 window.i18nReady = initI18n().then(() => {
-    document.getElementById('language-toggle')?.addEventListener('click', toggleLanguage);
+    document.querySelectorAll('#language-toggle, .mobile-language-toggle').forEach(button => {
+        button.addEventListener('click', toggleLanguage);
+    });
 });

@@ -32,16 +32,36 @@
   .nav-links.active {
     display: flex;
   }
+
+  /* El selector de idioma ya vive en el header móvil; no repetirlo dentro del menú expandido. */
+  #language-toggle {
+    display: none !important;
+  }
   
   /* 2. Área de toque (Tap Target) mejorada para los enlaces en móvil */
-  .nav-links a, #theme-toggle {
+  .nav-links a, #language-toggle, #theme-toggle {
     width: 100%;
     padding: 0.25rem 0;
     font-size: 1.1rem;
     justify-content: flex-start;
   }
 
-  /* 3. Estilo del botón "Menu" */
+  /* 3. Controles móviles: idioma a la izquierda de Menu */
+  .mobile-nav-actions {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .mobile-language-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    min-width: 2.4rem;
+    padding: 0.35rem 0.5rem;
+    font-size: 0.78rem;
+  }
+
   .mobile-menu-btn { 
     display: block; 
     text-transform: uppercase;
