@@ -1,0 +1,222 @@
+{
+  "en": {
+    "meta": {
+      "title": "Enrique Gómez | Scientific Software Engineer",
+      "description": "Enrique Gómez - Scientific Software Engineer, Machine Learning & Biomedical Computing.",
+      "ogDescription": "Engineering computational tools and machine learning systems to accelerate biomedical research."
+    },
+    "nav": {
+      "about": "About",
+      "work": "Work",
+      "research": "Research",
+      "engineering": "Engineering",
+      "contact": "Contact",
+      "menu": "Menu",
+      "close": "Close",
+      "languageAria": "Cambiar idioma a español",
+      "themeAria": "Toggle theme"
+    },
+    "hero": {
+      "role": "SCIENTIFIC SOFTWARE ENGINEER",
+      "subtitle": "Machine Learning · Biomedical Computing",
+      "description": "Engineering computational tools and machine learning systems to accelerate biomedical research.",
+      "explore": "Explore Work",
+      "cv": "Download CV"
+    },
+    "terminal": {
+      "content": "$ whoami\nenrique-gomez\n\nrole:\n  scientific-software-engineer\n\nfocus:\n  machine-learning\n  scientific-computing\n  biomedical-ai\n\ncurrently:\n  MSc · Artificial Intelligence"
+    },
+    "about": {
+      "heading": "ABOUT",
+      "lead": "I work at the intersection of biomedical engineering, scientific computing and machine learning.",
+      "body": "My focus is on building strong and measurable computational tools for research and biomedical applications.",
+      "basedIn": "Based in",
+      "location": "Aguascalientes, Mexico",
+      "education": "Education",
+      "educationValue": "M.Sc. Artificial Intelligence — UAA (expected 2027)\nBiomedical Engineering",
+      "currentFocus": "Current focus",
+      "languages": "Languages"
+    },
+    "areas": {
+      "scientificSoftware": "01 / SCIENTIFIC SOFTWARE",
+      "numericalMethods": "Numerical Methods",
+      "optimization": "Optimization",
+      "testing": "Testing",
+      "packaging": "Packaging",
+      "machineLearning": "02 / MACHINE LEARNING",
+      "supervisedLearning": "Supervised Learning",
+      "statisticalValidation": "Statistical Validation",
+      "biomedicalComputing": "03 / BIOMEDICAL COMPUTING",
+      "signalProcessing": "Signal Processing",
+      "bioinstrumentation": "Bioinstrumentation",
+      "embeddedSystems": "Embedded Systems",
+      "researchEngineering": "04 / RESEARCH ENGINEERING",
+      "reproducibility": "Reproducibility",
+      "benchmarking": "Benchmarking",
+      "experimentalDesign": "Experimental Design",
+      "statisticalAnalysis": "Statistical Analysis"
+    },
+    "sections": {
+      "research": "RESEARCH",
+      "researchLoading": "Loading research data...",
+      "work": "SELECTED WORK",
+      "github": "LATEST FROM GITHUB",
+      "githubLoading": "Initializing connection to GitHub API...",
+      "viewRepositories": "View all repositories →",
+      "engineering": "ENGINEERING STACK",
+      "philosophy": "ENGINEERING PHILOSOPHY"
+    },
+    "stack": {
+      "languages": "LANGUAGES",
+      "scientificComputing": "SCIENTIFIC COMPUTING",
+      "machineLearning": "MACHINE LEARNING",
+      "softwareEngineering": "SOFTWARE ENGINEERING",
+      "biomedical": "BIOMEDICAL",
+      "embedded": "EMBEDDED"
+    },
+    "philosophy": {
+      "quote": "\"I care about software that can be reproduced, tested, measured and reused.\"",
+      "reproducibility": "Reproducibility",
+      "validation": "Experimental Validation",
+      "architecture": "Modular Architecture",
+      "evidence": "Statistical Evidence",
+      "openSoftware": "Open Scientific Software"
+    },
+    "contact": {
+      "title": "LET'S BUILD SOMETHING USEFUL.",
+      "description": "Interested in scientific software, machine learning, research engineering, and biomedical AI opportunities.",
+      "email": "Send me an email"
+    },
+    "footer": {
+      "role": "Scientific Software Engineer."
+    },
+    "dynamic": {
+      "projectUnavailable": "Project information is currently unavailable.",
+      "researchUnavailable": "Research information is currently unavailable.",
+      "director": "Director:",
+      "codirector": "Co-director:",
+      "methodologyFlow": "Methodology flow",
+      "conceptualFlow": "Conceptual methodology flow",
+      "githubFallbackDescription": "Scientific computing repository.",
+      "githubUnavailable": "Latest repositories are temporarily unavailable. Please visit GitHub directly.",
+      "accuracy": "Accuracy"
+    },
+    "profile": {
+      "spanish": "Spanish",
+      "english": "English",
+      "mandarin": "Mandarin Chinese",
+      "native": "Native",
+      "hsk": "Preparing for HSK 1 certification"
+    }
+  },
+  "es": {
+    "meta": {
+      "title": "Enrique Gómez | Ingeniero de Software Científico",
+      "description": "Enrique Gómez - Ingeniero de Software Científico, Machine Learning y Computación Biomédica.",
+      "ogDescription": "Desarrollo herramientas computacionales y sistemas de aprendizaje automático para acelerar la investigación biomédica."
+    },
+    "nav": {
+      "about": "Sobre mí",
+      "work": "Proyectos",
+      "research": "Investigación",
+      "engineering": "Ingeniería",
+      "contact": "Contacto",
+      "menu": "Menú",
+      "close": "Cerrar",
+      "languageAria": "Change language to English",
+      "themeAria": "Cambiar tema"
+    },
+    "hero": {
+      "role": "INGENIERO DE SOFTWARE CIENTÍFICO",
+      "subtitle": "Machine Learning · Computación Biomédica",
+      "description": "Desarrollo herramientas computacionales y sistemas de aprendizaje automático para acelerar la investigación biomédica.",
+      "explore": "Explorar proyectos",
+      "cv": "Descargar CV"
+    },
+    "terminal": {
+      "content": "$ whoami\nenrique-gomez\n\nrol:\n  ingeniero-de-software-cientifico\n\nenfoque:\n  machine-learning\n  computacion-cientifica\n  ia-biomedica\n\nactualmente:\n  Maestría · Inteligencia Artificial"
+    },
+    "about": {
+      "heading": "SOBRE MÍ",
+      "lead": "Trabajo en la intersección de la ingeniería biomédica, el cómputo científico y el aprendizaje automático.",
+      "body": "Mi enfoque es desarrollar herramientas computacionales robustas y medibles para investigación y aplicaciones biomédicas.",
+      "basedIn": "Ubicación",
+      "location": "Aguascalientes, México",
+      "education": "Formación",
+      "educationValue": "M.C. Inteligencia Artificial — UAA (prevista 2027)\nIngeniería Biomédica",
+      "currentFocus": "Enfoque actual",
+      "languages": "Idiomas"
+    },
+    "areas": {
+      "scientificSoftware": "01 / SOFTWARE CIENTÍFICO",
+      "numericalMethods": "Métodos numéricos",
+      "optimization": "Optimización",
+      "testing": "Pruebas",
+      "packaging": "Empaquetado",
+      "machineLearning": "02 / MACHINE LEARNING",
+      "supervisedLearning": "Aprendizaje supervisado",
+      "statisticalValidation": "Validación estadística",
+      "biomedicalComputing": "03 / COMPUTACIÓN BIOMÉDICA",
+      "signalProcessing": "Procesamiento de señales",
+      "bioinstrumentation": "Bioinstrumentación",
+      "embeddedSystems": "Sistemas embebidos",
+      "researchEngineering": "04 / INGENIERÍA DE INVESTIGACIÓN",
+      "reproducibility": "Reproducibilidad",
+      "benchmarking": "Evaluación comparativa",
+      "experimentalDesign": "Diseño experimental",
+      "statisticalAnalysis": "Análisis estadístico"
+    },
+    "sections": {
+      "research": "INVESTIGACIÓN",
+      "researchLoading": "Cargando información de investigación...",
+      "work": "PROYECTOS DESTACADOS",
+      "github": "ÚLTIMO EN GITHUB",
+      "githubLoading": "Inicializando conexión con la API de GitHub...",
+      "viewRepositories": "Ver todos los repositorios →",
+      "engineering": "STACK DE INGENIERÍA",
+      "philosophy": "FILOSOFÍA DE INGENIERÍA"
+    },
+    "stack": {
+      "languages": "LENGUAJES",
+      "scientificComputing": "CÓMPUTO CIENTÍFICO",
+      "machineLearning": "MACHINE LEARNING",
+      "softwareEngineering": "INGENIERÍA DE SOFTWARE",
+      "biomedical": "BIOMÉDICO",
+      "embedded": "SISTEMAS EMBEBIDOS"
+    },
+    "philosophy": {
+      "quote": "\"Me importa desarrollar software que pueda reproducirse, probarse, medirse y reutilizarse.\"",
+      "reproducibility": "Reproducibilidad",
+      "validation": "Validación experimental",
+      "architecture": "Arquitectura modular",
+      "evidence": "Evidencia estadística",
+      "openSoftware": "Software científico abierto"
+    },
+    "contact": {
+      "title": "CONSTRUYAMOS ALGO ÚTIL.",
+      "description": "Interesado en oportunidades de software científico, machine learning, ingeniería de investigación e IA biomédica.",
+      "email": "Envíame un correo"
+    },
+    "footer": {
+      "role": "Ingeniero de Software Científico."
+    },
+    "dynamic": {
+      "projectUnavailable": "La información de proyectos no está disponible en este momento.",
+      "researchUnavailable": "La información de investigación no está disponible en este momento.",
+      "director": "Director:",
+      "codirector": "Codirectora:",
+      "methodologyFlow": "Flujo metodológico",
+      "conceptualFlow": "Flujo metodológico conceptual",
+      "githubFallbackDescription": "Repositorio de cómputo científico.",
+      "githubUnavailable": "Los repositorios más recientes no están disponibles temporalmente. Visita GitHub directamente.",
+      "accuracy": "Exactitud"
+    },
+    "profile": {
+      "spanish": "Español",
+      "english": "Inglés",
+      "mandarin": "Chino mandarín",
+      "native": "Nativo",
+      "hsk": "Preparación para certificación HSK 1"
+    }
+  }
+}

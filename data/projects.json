@@ -4,7 +4,8 @@
     "evobench-lib",
     "mnist_bench",
     "ShapeMetrics-Interface",
-    "Interpolacion-de-Imagenes"
+    "Interpolacion-de-Imagenes",
+    "ecg-zebrafish"
   ],
   "excludedRepositories": [
     "NewtonGomez.github.io",
@@ -16,8 +17,14 @@
       "id": "eeea-py",
       "name": "EEEA-Py",
       "isHero": true,
-      "category": "Scientific Python / Optimization",
-      "description": "Led modular architecture, test suite, and the Python-vs-R benchmark study for a package implementing EES (Salinas-Gutiérrez & Muñoz Zavala, 2023) as a population-initialization strategy across EMNA, PSO, and GWO metaheuristics.",
+      "category": {
+        "en": "Scientific Python / Optimization",
+        "es": "Python científico / Optimización"
+      },
+      "description": {
+        "en": "Led modular architecture, test suite, and the Python-vs-R benchmark study for a package implementing EES (Salinas-Gutiérrez & Muñoz Zavala, 2023) as a population-initialization strategy across EMNA, PSO, and GWO metaheuristics.",
+        "es": "Lideré la arquitectura modular, la suite de pruebas y el estudio comparativo Python-vs-R de un paquete que implementa EES (Salinas-Gutiérrez & Muñoz Zavala, 2023) como estrategia de inicialización poblacional en las metaheurísticas EMNA, PSO y GWO."
+      },
       "technologies": [
         "Python",
         "NumPy",
@@ -26,21 +33,36 @@
         "PyPI"
       ],
       "evidence": {
-        "title": "EXPERIMENTAL EVIDENCE",
-        "context": "Cross-language benchmark comparing Python and R implementations of EES across 30 independent runs (Sphere function, dim=10).",
+        "title": {
+          "en": "EXPERIMENTAL EVIDENCE",
+          "es": "EVIDENCIA EXPERIMENTAL"
+        },
+        "context": {
+          "en": "Cross-language benchmark comparing Python and R implementations of EES across 30 independent runs (Sphere function, dim=10).",
+          "es": "Benchmark entre lenguajes que compara las implementaciones en Python y R de EES mediante 30 ejecuciones independientes (función Sphere, dim=10)."
+        },
         "type": "metrics",
         "items": [
           {
             "value": "2.5×",
-            "label": "faster execution (p < 0.001)"
+            "label": {
+              "en": "faster execution (p < 0.001)",
+              "es": "ejecución más rápida (p < 0.001)"
+            }
           },
           {
             "value": "30",
-            "label": "runs per experiment"
+            "label": {
+              "en": "runs per experiment",
+              "es": "ejecuciones por experimento"
+            }
           },
           {
             "value": "p = 0.8418",
-            "label": "solution quality equivalence (Mann-Whitney U)"
+            "label": {
+              "en": "solution quality equivalence (Mann-Whitney U)",
+              "es": "equivalencia en calidad de solución (U de Mann-Whitney)"
+            }
           }
         ]
       },
@@ -51,23 +73,53 @@
       "id": "evobench",
       "name": "EvoBench",
       "isHero": false,
-      "category": "Evolutionary Algorithm Framework",
-      "description": "Python framework for benchmarking evolutionary algorithms against classic n-dimensional test functions.",
+      "category": {
+        "en": "Evolutionary Algorithm Framework",
+        "es": "Framework de algoritmos evolutivos"
+      },
+      "description": {
+        "en": "Python framework for benchmarking evolutionary algorithms against classic n-dimensional test functions.",
+        "es": "Framework en Python para evaluar algoritmos evolutivos frente a funciones de prueba clásicas de n dimensiones."
+      },
       "technologies": [
         "Python",
         "PyPI"
       ],
       "evidence": {
-        "title": "EXPERIMENTAL CAPABILITIES",
+        "title": {
+          "en": "EXPERIMENTAL CAPABILITIES",
+          "es": "CAPACIDADES EXPERIMENTALES"
+        },
         "type": "capabilities",
         "items": [
-          "EDA",
-          "PSO",
-          "ABC",
-          "benchmark functions",
-          "experimental engine",
-          "statistical analysis",
-          "30-run experimental design"
+          {
+            "en": "EDA",
+            "es": "EDA"
+          },
+          {
+            "en": "PSO",
+            "es": "PSO"
+          },
+          {
+            "en": "ABC",
+            "es": "ABC"
+          },
+          {
+            "en": "benchmark functions",
+            "es": "funciones benchmark"
+          },
+          {
+            "en": "experimental engine",
+            "es": "motor experimental"
+          },
+          {
+            "en": "statistical analysis",
+            "es": "análisis estadístico"
+          },
+          {
+            "en": "30-run experimental design",
+            "es": "diseño experimental de 30 ejecuciones"
+          }
         ]
       },
       "github": "https://github.com/NewtonGomez/evobench-lib",
@@ -77,15 +129,24 @@
       "id": "mnist-bench",
       "name": "MNIST Bench",
       "isHero": false,
-      "category": "Machine Learning",
-      "description": "Paired comparison of an MLX-based MLP and a scikit-learn One-vs-One SVM on a stratified 15k-sample subset of MNIST, using 10-fold cross-validation and formal hypothesis testing.",
+      "category": {
+        "en": "Machine Learning",
+        "es": "Machine Learning"
+      },
+      "description": {
+        "en": "Paired comparison of an MLX-based MLP and a scikit-learn One-vs-One SVM on a stratified 15k-sample subset of MNIST, using 10-fold cross-validation and formal hypothesis testing.",
+        "es": "Comparación pareada entre un MLP basado en MLX y un SVM One-vs-One de scikit-learn sobre un subconjunto estratificado de 15 mil muestras de MNIST, utilizando validación cruzada de 10 pliegues y pruebas formales de hipótesis."
+      },
       "technologies": [
         "Python",
         "MLX",
         "Scikit-learn"
       ],
       "evidence": {
-        "title": "10-fold stratified cross-validation (paired)",
+        "title": {
+          "en": "10-fold stratified cross-validation (paired)",
+          "es": "Validación cruzada estratificada de 10 pliegues (pareada)"
+        },
         "type": "comparison",
         "items": [
           {
@@ -98,8 +159,14 @@
           }
         ],
         "footer": [
-          "Paired t-test: p < 0.001",
-          "95% bootstrap CI: [0.081, 0.090]"
+          {
+            "en": "Paired t-test: p < 0.001",
+            "es": "Prueba t pareada: p < 0.001"
+          },
+          {
+            "en": "95% bootstrap CI: [0.081, 0.090]",
+            "es": "IC bootstrap del 95%: [0.081, 0.090]"
+          }
         ]
       },
       "github": "https://github.com/NewtonGomez/mnist_bench",
@@ -109,9 +176,15 @@
       "id": "sleep-staging-gnn",
       "name": "Sleep Staging GNN",
       "isHero": false,
-      "category": "Graduate Thesis · In Progress",
+      "category": {
+        "en": "Graduate Thesis · In Progress",
+        "es": "Tesis de posgrado · En desarrollo"
+      },
       "status": "in-progress",
-      "description": "M.Sc. thesis proposal: a Graph Neural Network enriched with copula functions to classify sleep stages from EEG while remaining invariant to electrode montage. Advised by Dr. Rogelio Salinas Gutiérrez and Dra. Ivonne Bazán Trujillo, UAA.",
+      "description": {
+        "en": "M.Sc. thesis proposal: a Graph Neural Network enriched with copula functions to classify sleep stages from EEG while remaining invariant to electrode montage. Advised by Dr. Rogelio Salinas Gutiérrez and Dra. Ivonne Bazán Trujillo, UAA.",
+        "es": "Propuesta de tesis de maestría: una Red Neuronal de Grafos enriquecida con funciones cópula para clasificar etapas del sueño a partir de EEG manteniendo invariancia frente al montaje de electrodos. Dirigida por el Dr. Rogelio Salinas Gutiérrez y la Dra. Ivonne Bazán Trujillo, UAA."
+      },
       "technologies": [
         "Copula Functions",
         "GNN",
@@ -119,48 +192,93 @@
         "PLV/PAC/HFD"
       ],
       "evidence": {
-        "title": "PROPOSED METHODOLOGY",
+        "title": {
+          "en": "PROPOSED METHODOLOGY",
+          "es": "METODOLOGÍA PROPUESTA"
+        },
         "type": "flow",
         "items": [
-          "EEG (Sleep-EDF, ISRUC, MASS)",
-          "Functional Connectivity (PLV/PAC)",
-          "Copula-weighted Graph",
-          "GNN",
-          "Sleep Stage Classification"
+          {
+            "en": "EEG (Sleep-EDF, ISRUC, MASS)",
+            "es": "EEG (Sleep-EDF, ISRUC, MASS)"
+          },
+          {
+            "en": "Functional Connectivity (PLV/PAC)",
+            "es": "Conectividad funcional (PLV/PAC)"
+          },
+          {
+            "en": "Copula-weighted Graph",
+            "es": "Grafo ponderado por cópulas"
+          },
+          {
+            "en": "GNN",
+            "es": "GNN"
+          },
+          {
+            "en": "Sleep Stage Classification",
+            "es": "Clasificación de etapas del sueño"
+          }
         ]
       },
       "github": "",
       "pypi": ""
-    }, 
+    },
     {
       "id": "image-interpolation",
       "name": "Image Interpolation Methods",
       "isHero": false,
-      "category": "Scientific Computing / Numerical Methods",
-      "description": "Comparative study evaluating Global Bilinear Lagrange, Local Bilinear Lagrange (2×2 planes), and a random baseline for image reconstruction on the Waterloo benchmark dataset (grayscale and color).",
+      "category": {
+        "en": "Scientific Computing / Numerical Methods",
+        "es": "Cómputo científico / Métodos numéricos"
+      },
+      "description": {
+        "en": "Comparative study evaluating Global Bilinear Lagrange, Local Bilinear Lagrange (2×2 planes), and a random baseline for image reconstruction on the Waterloo benchmark dataset (grayscale and color).",
+        "es": "Estudio comparativo de Lagrange bilineal global, Lagrange bilineal local (planos 2×2) y una línea base aleatoria para reconstrucción de imágenes sobre el conjunto benchmark Waterloo (escala de grises y color)."
+      },
       "technologies": [
         "Python",
         "NumPy",
         "OpenCV"
       ],
       "evidence": {
-        "title": "EXPERIMENTAL EVIDENCE",
-        "context": "Average relative reconstruction error (Euclidean/Frobenius norm) across 12 grayscale benchmark images. The initial hypothesis — that the global model would outperform the local one — was rejected: the global polynomial proved numerically unstable at this resolution.",
+        "title": {
+          "en": "EXPERIMENTAL EVIDENCE",
+          "es": "EVIDENCIA EXPERIMENTAL"
+        },
+        "context": {
+          "en": "Average relative reconstruction error (Euclidean/Frobenius norm) across 12 grayscale benchmark images. The initial hypothesis — that the global model would outperform the local one — was rejected: the global polynomial proved numerically unstable at this resolution.",
+          "es": "Error relativo promedio de reconstrucción (norma euclidiana/Frobenius) sobre 12 imágenes benchmark en escala de grises. La hipótesis inicial —que el modelo global superaría al local— fue rechazada: el polinomio global resultó numéricamente inestable a esta resolución."
+        },
         "type": "comparison",
-        "metric": "Relative error",
+        "metric": {
+          "en": "Relative error",
+          "es": "Error relativo"
+        },
         "items": [
           {
             "model": "Global Bilinear Lagrange",
-            "score": "101.2% error (0.01s)"
+            "score": {
+              "en": "101.2% error (0.01s)",
+              "es": "101.2% de error (0.01s)"
+            }
           },
           {
             "model": "Local Bilinear Planes",
-            "score": "34.69% error (0.09s)"
+            "score": {
+              "en": "34.69% error (0.09s)",
+              "es": "34.69% de error (0.09s)"
+            }
           }
         ],
         "footer": [
-          "Random baseline: 80.33% error",
-          "Local model was the only numerically viable method"
+          {
+            "en": "Random baseline: 80.33% error",
+            "es": "Línea base aleatoria: 80.33% de error"
+          },
+          {
+            "en": "Local model was the only numerically viable method",
+            "es": "El modelo local fue el único método numéricamente viable"
+          }
         ]
       },
       "github": "https://github.com/NewtonGomez/Interpolacion-de-Imagenes",
@@ -170,15 +288,136 @@
       "id": "pixiter",
       "name": "Pixiter",
       "isHero": false,
-      "category": "Scientific Computing / Shape Analysis",
-      "description": "Desktop GUI for shape analysis using Freeman Chain Codes, including contour representation, geometric descriptors, and compact shape encoding. Co-authored with Victoria Galván for the course Nuevos Paradigmas Tecnológicos.",
+      "category": {
+        "en": "Scientific Computing / Shape Analysis",
+        "es": "Cómputo científico / Análisis de formas"
+      },
+      "description": {
+        "en": "Desktop GUI for shape analysis using Freeman Chain Codes, including contour representation, geometric descriptors, information-theoretic analysis, compression, and shape reconstruction. Co-authored with Victoria Galván for the course Nuevos Paradigmas Tecnológicos.",
+        "es": "Interfaz gráfica de escritorio para análisis de formas mediante Códigos de Cadena de Freeman, incluyendo representación de contornos, descriptores geométricos, análisis de teoría de la información, compresión y reconstrucción de formas. Coautoría con Victoria Galván para la asignatura Nuevos Paradigmas Tecnológicos."
+      },
       "technologies": [
         "Python",
         "Freeman Chain Codes",
         "Contour Analysis",
         "GUI"
       ],
+      "evidence": {
+        "title": {
+          "en": "SHAPE ANALYSIS CAPABILITIES",
+          "es": "CAPACIDADES DE ANÁLISIS DE FORMAS"
+        },
+        "context": {
+          "en": "ShapeMetrics-Interface v1.0 implements an end-to-end workflow for encoding, analyzing, compressing, storing, loading, and reconstructing 2D shapes from Freeman Chain Codes.",
+          "es": "ShapeMetrics-Interface v1.0 implementa un flujo integral para codificar, analizar, comprimir, almacenar, cargar y reconstruir formas 2D a partir de Códigos de Cadena de Freeman."
+        },
+        "type": "capabilities",
+        "items": [
+          {
+            "en": "5 chain-code variants: F4, F8, AF8, VCC, and 3OT",
+            "es": "5 variantes de código de cadena: F4, F8, AF8, VCC y 3OT"
+          },
+          {
+            "en": "Contour extraction and binary shape reconstruction",
+            "es": "Extracción de contornos y reconstrucción binaria de formas"
+          },
+          {
+            "en": "Geometric descriptors: area, perimeter, compactness, and Euler characteristic",
+            "es": "Descriptores geométricos: área, perímetro, compacidad y característica de Euler"
+          },
+          {
+            "en": "Shannon entropy and Huffman/arithmetic coding analysis",
+            "es": "Entropía de Shannon y análisis de codificación Huffman/aritmética"
+          },
+          {
+            "en": "Chain-code persistence with metadata and histogram export",
+            "es": "Persistencia de códigos de cadena con metadatos y exportación de histogramas"
+          }
+        ],
+        "footer": [
+          {
+            "en": "Desktop GUI · Image processing · Information theory",
+            "es": "GUI de escritorio · Procesamiento de imágenes · Teoría de la información"
+          },
+          {
+            "en": "v1.0.0 · Co-authored with Victoria Galván",
+            "es": "v1.0.0 · Coautoría con Victoria Galván"
+          }
+        ]
+      },
       "github": "https://github.com/NewtonGomez/ShapeMetrics-Interface",
+      "pypi": ""
+    },
+    {
+      "id": "ecg-zebrafish",
+      "name": {
+        "en": "Zebrafish ECG Acquisition & Analysis System",
+        "es": "Sistema de Adquisición y Análisis de ECG en Pez Cebra"
+      },
+      "category": {
+        "en": "Biomedical Engineering / Scientific Computing",
+        "es": "Ingeniería biomédica / Cómputo científico"
+      },
+      "description": {
+        "en": "Bachelor’s thesis project focused on acquiring, transmitting, visualizing, storing, and analyzing electrocardiographic signals from zebrafish models. The system combines embedded acquisition, LAN/Wi-Fi communication, a Python desktop interface, real-time ECG visualization, BPM estimation, and digital filtering.",
+        "es": "Proyecto de tesina de licenciatura enfocado en adquirir, transmitir, visualizar, almacenar y analizar señales electrocardiográficas de modelos de pez cebra. El sistema integra adquisición embebida, comunicación LAN/Wi-Fi, una interfaz de escritorio en Python, visualización de ECG en tiempo real, estimación de BPM y filtrado digital."
+      },
+      "technologies": [
+        "Python",
+        "MicroPython",
+        "Tkinter",
+        "NumPy",
+        "pandas",
+        "Matplotlib",
+        "SciPy",
+        "TCP/IP Sockets",
+        "ESP8266",
+        "Digital Signal Processing"
+      ],
+      "evidence": {
+        "title": {
+          "en": "SYSTEM CAPABILITIES",
+          "es": "CAPACIDADES DEL SISTEMA"
+        },
+        "context": {
+          "en": "Developed as a Bachelor's thesis in Biomedical Engineering for in vivo ECG acquisition and analysis in zebrafish cardiotoxicity studies.",
+          "es": "Desarrollado como tesina de Ingeniería Biomédica para la adquisición y análisis in vivo de ECG en estudios de cardiotoxicidad con pez cebra."
+        },
+        "type": "capabilities",
+        "items": [
+          {
+            "en": "Real-time ECG signal acquisition and visualization",
+            "es": "Adquisición y visualización de señal ECG en tiempo real"
+          },
+          {
+            "en": "LAN/Wi-Fi client-server communication",
+            "es": "Comunicación cliente-servidor mediante LAN/Wi-Fi"
+          },
+          {
+            "en": "BPM estimation from ECG peaks",
+            "es": "Estimación de BPM a partir de picos de ECG"
+          },
+          {
+            "en": "CSV signal storage for later analysis",
+            "es": "Almacenamiento de señales en CSV para análisis posterior"
+          },
+          {
+            "en": "Configurable Butterworth digital filtering",
+            "es": "Filtrado digital Butterworth configurable"
+          }
+        ],
+        "footer": [
+          {
+            "en": "Bachelor’s thesis project",
+            "es": "Proyecto de tesina de licenciatura"
+          },
+          {
+            "en": "Embedded systems · Networking · GUI development · Biosignal processing",
+            "es": "Sistemas embebidos · Redes · Desarrollo GUI · Procesamiento de bioseñales"
+          }
+        ]
+      },
+      "github": "https://github.com/NewtonGomez/ECG-Zebrafish-",
       "pypi": ""
     }
   ]

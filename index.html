@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="./css/components.css">
     <link rel="stylesheet" href="./css/responsive.css">
 
+    <script src="./js/i18n.js" defer></script>
     <script src="./js/ui.js" defer></script>
     <script src="./js/projects.js" defer></script>
     <script src="./js/research.js" defer></script>
@@ -45,31 +46,32 @@
         <div class="nav-container">
             <a href="#" class="nav-brand">EG<span class="brand-slash">/</span></a>
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#work">Work</a>
-                <a href="#research">Research</a>
-                <a href="#engineering">Engineering</a>
-                <a href="#contact">Contact</a>
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#work" data-i18n="nav.work">Work</a>
+                <a href="#research" data-i18n="nav.research">Research</a>
+                <a href="#engineering" data-i18n="nav.engineering">Engineering</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
                 <a href="https://github.com/NewtonGomez" target="_blank" rel="noopener">GitHub</a>
-                <button id="theme-toggle" aria-label="Toggle theme">
+                <button id="language-toggle" class="language-toggle" aria-label="Cambiar idioma a español">ES</button>
+                <button id="theme-toggle" aria-label="Toggle theme" data-i18n-aria-label="nav.themeAria">
                     <svg class="icon-theme" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
                 </button>
             </div>
-            <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">Menu</button>
+            <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" data-i18n="nav.menu">Menu</button>
         </div>
     </nav>
 
     <main>
         <section id="hero" class="hero-section">
             <div class="hero-content">
-                <p class="mono-label">SCIENTIFIC SOFTWARE ENGINEER</p>
+                <p class="mono-label" data-i18n="hero.role">SCIENTIFIC SOFTWARE ENGINEER</p>
                 <h1 class="hero-title">ENRIQUE GÓMEZ</h1>
-                <h2 class="hero-subtitle">Machine Learning · Biomedical Computing</h2>
-                <p class="hero-description">Engineering computational tools and machine learning systems to accelerate biomedical research.</p>
+                <h2 class="hero-subtitle" data-i18n="hero.subtitle">Machine Learning · Biomedical Computing</h2>
+                <p class="hero-description" data-i18n="hero.description">Engineering computational tools and machine learning systems to accelerate biomedical research.</p>
                 <div class="button-group">
-                    <a href="#work" class="btn btn-primary">Explore Work</a>
+                    <a href="#work" class="btn btn-primary" data-i18n="hero.explore">Explore Work</a>
                     <a href="https://github.com/NewtonGomez" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
-                    <a href="./assets/cv/Enrique-Gomez-CV.pdf" target="_blank" rel="noopener" class="btn btn-outline">Download CV</a>
+                    <a href="./assets/cv/Enrique-Gomez-CV.pdf" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="hero.cv">Download CV</a>
                 </div>
             </div>
             <div class="hero-visual" aria-hidden="true">
@@ -77,7 +79,7 @@
                     <div class="terminal-header">
                         <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
                     </div>
-                    <pre class="terminal-body"><code>$ whoami
+                    <pre class="terminal-body"><code data-i18n="terminal.content">$ whoami
 enrique-gomez
 
 role:
@@ -95,23 +97,24 @@ currently:
         </section>
 
         <section id="about" class="section">
-            <h2 class="section-heading">ABOUT</h2>
+            <h2 class="section-heading" data-i18n="about.heading">ABOUT</h2>
             <div class="about-grid">
                 <div class="about-text">
-                    <p class="lead-text">I work at the intersection of biomedical engineering, scientific computing and machine learning.</p>
-                    <p>My focus is on building strong and measurable computational tools for research and biomedical applications.</p>
+                    <p class="lead-text" data-i18n="about.lead">I work at the intersection of biomedical engineering, scientific computing and machine learning.</p>
+                    <p data-i18n="about.body">My focus is on building strong and measurable computational tools for research and biomedical applications.</p>
                 </div>
                 <div class="about-meta">
                     <div class="meta-block">
-                        <span class="meta-label">Based in</span>
-                        <span class="meta-value">Aguascalientes, Mexico</span>
+                        <span class="meta-label" data-i18n="about.basedIn">Based in</span>
+                        <span class="meta-value" data-i18n="about.location">Aguascalientes, Mexico</span>
                     </div>
                     <div class="meta-block">
-                        <span class="meta-label">Education</span>
-                        <span class="meta-value">M.Sc. Artificial Intelligence — UAA <em>(expected 2027)</em><br>Biomedical Engineering</span>
+                        <span class="meta-label" data-i18n="about.education">Education</span>
+                        <span class="meta-value" data-i18n="about.educationValue">M.Sc. Artificial Intelligence — UAA (expected 2027)
+Biomedical Engineering</span>
                     </div>
                     <div class="meta-block">
-                        <span class="meta-label">Current focus</span>
+                        <span class="meta-label" data-i18n="about.currentFocus">Current focus</span>
                         <span class="meta-value">EEG · GNN · Scientific ML</span>
                     </div>
                 </div>
@@ -121,104 +124,104 @@ currently:
         <section id="areas" class="section">
             <div class="matrix-grid">
                 <div class="matrix-cell">
-                    <span class="matrix-num">01 / SCIENTIFIC SOFTWARE</span>
+                    <span class="matrix-num" data-i18n="areas.scientificSoftware">01 / SCIENTIFIC SOFTWARE</span>
                     <ul class="matrix-list mono-text">
-                        <li>Python</li><li>Numerical Methods</li><li>Optimization</li><li>Testing</li><li>Packaging</li><li>PyPI</li>
+                        <li>Python</li><li data-i18n="areas.numericalMethods">Numerical Methods</li><li data-i18n="areas.optimization">Optimization</li><li data-i18n="areas.testing">Testing</li><li data-i18n="areas.packaging">Packaging</li><li>PyPI</li>
                     </ul>
                 </div>
                 <div class="matrix-cell">
-                    <span class="matrix-num">02 / MACHINE LEARNING</span>
+                    <span class="matrix-num" data-i18n="areas.machineLearning">02 / MACHINE LEARNING</span>
                     <ul class="matrix-list mono-text">
-                        <li>Supervised Learning</li><li>MLP</li><li>SVM</li><li>GNN</li><li>Statistical Validation</li>
+                        <li data-i18n="areas.supervisedLearning">Supervised Learning</li><li>MLP</li><li>SVM</li><li>GNN</li><li data-i18n="areas.statisticalValidation">Statistical Validation</li>
                     </ul>
                 </div>
                 <div class="matrix-cell">
-                    <span class="matrix-num">03 / BIOMEDICAL COMPUTING</span>
+                    <span class="matrix-num" data-i18n="areas.biomedicalComputing">03 / BIOMEDICAL COMPUTING</span>
                     <ul class="matrix-list mono-text">
-                        <li>EEG</li><li>EMG</li><li>ECG</li><li>Signal Processing</li><li>Bioinstrumentation</li><li>Embedded Systems</li>
+                        <li>EEG</li><li>EMG</li><li>ECG</li><li data-i18n="areas.signalProcessing">Signal Processing</li><li data-i18n="areas.bioinstrumentation">Bioinstrumentation</li><li data-i18n="areas.embeddedSystems">Embedded Systems</li>
                     </ul>
                 </div>
                 <div class="matrix-cell">
-                    <span class="matrix-num">04 / RESEARCH ENGINEERING</span>
+                    <span class="matrix-num" data-i18n="areas.researchEngineering">04 / RESEARCH ENGINEERING</span>
                     <ul class="matrix-list mono-text">
-                        <li>Reproducibility</li><li>Benchmarking</li><li>Experimental Design</li><li>Statistical Analysis</li>
+                        <li data-i18n="areas.reproducibility">Reproducibility</li><li data-i18n="areas.benchmarking">Benchmarking</li><li data-i18n="areas.experimentalDesign">Experimental Design</li><li data-i18n="areas.statisticalAnalysis">Statistical Analysis</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="research" class="section">
-            <h2 class="section-heading">RESEARCH</h2>
+            <h2 class="section-heading" data-i18n="sections.research">RESEARCH</h2>
                 <!-- Este contenedor será poblado dinámicamente y de forma segura por research.js -->
                 <div id="research-container" class="research-container">
-                    <p class="mono-text">Loading research data...</p>
+                    <p class="mono-text" data-i18n="sections.researchLoading">Loading research data...</p>
                 </div> 
         </section>
 
         <section id="work" class="section">
-            <h2 class="section-heading">SELECTED WORK</h2>
+            <h2 class="section-heading" data-i18n="sections.work">SELECTED WORK</h2>
             <div id="featured-projects-grid" class="projects-grid">
                 <!-- Inyectado de manera segura via projects.js -->
             </div>
         </section>
 
         <section id="github-latest" class="section">
-            <h2 class="section-heading">LATEST FROM GITHUB</h2>
+            <h2 class="section-heading" data-i18n="sections.github">LATEST FROM GITHUB</h2>
             <div id="latest-projects-grid" class="github-grid">
-                <p id="github-loading" class="mono-text">Initializing connection to GitHub API...</p>
+                <p id="github-loading" class="mono-text" data-i18n="sections.githubLoading">Initializing connection to GitHub API...</p>
             </div>
             <div class="view-all-link">
-                <a href="https://github.com/NewtonGomez" target="_blank" rel="noopener">View all repositories →</a>
+                <a href="https://github.com/NewtonGomez" target="_blank" rel="noopener" data-i18n="sections.viewRepositories">View all repositories →</a>
             </div>
         </section>
 
         <section id="engineering" class="section">
-            <h2 class="section-heading">ENGINEERING STACK</h2>
+            <h2 class="section-heading" data-i18n="sections.engineering">ENGINEERING STACK</h2>
             <div class="stack-grid">
                 <div class="stack-group">
-                    <h4 class="stack-title">LANGUAGES</h4>
+                    <h4 class="stack-title" data-i18n="stack.languages">LANGUAGES</h4>
                     <p id="stack-languages" class="mono-text">Python · C++ · MATLAB · Java</p>
                 </div>
                 <div class="stack-group">
-                    <h4 class="stack-title">SCIENTIFIC COMPUTING</h4>
+                    <h4 class="stack-title" data-i18n="stack.scientificComputing">SCIENTIFIC COMPUTING</h4>
                     <p id="stack-scientific-computing" class="mono-text">NumPy · SciPy · Pandas · Matplotlib</p>
                 </div>
                 <div class="stack-group">
-                    <h4 class="stack-title">MACHINE LEARNING</h4>
+                    <h4 class="stack-title" data-i18n="stack.machineLearning">MACHINE LEARNING</h4>
                     <p id="stack-machine-learning" class="mono-text">scikit-learn · MLP · SVM · GNN · MLX</p>
                 </div>
                 <div class="stack-group">
-                    <h4 class="stack-title">SOFTWARE ENGINEERING</h4>
+                    <h4 class="stack-title" data-i18n="stack.softwareEngineering">SOFTWARE ENGINEERING</h4>
                     <p id="stack-software-engineering" class="mono-text">Git · GitHub · Pytest · Packaging · PyPI</p>
                 </div>
                 <div class="stack-group">
-                    <h4 class="stack-title">BIOMEDICAL</h4>
+                    <h4 class="stack-title" data-i18n="stack.biomedical">BIOMEDICAL</h4>
                     <p id="stack-biomedical" class="mono-text">EEG · EMG · ECG · Signal Processing</p>
                 </div>
                 <div class="stack-group">
-                    <h4 class="stack-title">EMBEDDED</h4>
+                    <h4 class="stack-title" data-i18n="stack.embedded">EMBEDDED</h4>
                     <p id="stack-embedded" class="mono-text">USART · Serial · Sensors · RF · Actuators</p>
                 </div>
             </div>
         </section>
 
         <section id="philosophy" class="section philosophy-section">
-            <h2 class="section-heading">ENGINEERING PHILOSOPHY</h2>
-            <p class="lead-text">"I care about software that can be reproduced, tested, measured and reused."</p>
+            <h2 class="section-heading" data-i18n="sections.philosophy">ENGINEERING PHILOSOPHY</h2>
+            <p class="lead-text" data-i18n="philosophy.quote">"I care about software that can be reproduced, tested, measured and reused."</p>
             <div class="philosophy-grid">
-                <div class="phil-item"><span class="phil-num">01</span> Reproducibility</div>
-                <div class="phil-item"><span class="phil-num">02</span> Experimental Validation</div>
-                <div class="phil-item"><span class="phil-num">03</span> Modular Architecture</div>
-                <div class="phil-item"><span class="phil-num">04</span> Statistical Evidence</div>
-                <div class="phil-item"><span class="phil-num">05</span> Open Scientific Software</div>
+                <div class="phil-item"><span class="phil-num">01</span> <span data-i18n="philosophy.reproducibility">Reproducibility</span></div>
+                <div class="phil-item"><span class="phil-num">02</span> <span data-i18n="philosophy.validation">Experimental Validation</span></div>
+                <div class="phil-item"><span class="phil-num">03</span> <span data-i18n="philosophy.architecture">Modular Architecture</span></div>
+                <div class="phil-item"><span class="phil-num">04</span> <span data-i18n="philosophy.evidence">Statistical Evidence</span></div>
+                <div class="phil-item"><span class="phil-num">05</span> <span data-i18n="philosophy.openSoftware">Open Scientific Software</span></div>
             </div>
         </section>
 
         <section id="contact" class="section contact-section">
-            <h2 class="contact-title">LET'S BUILD SOMETHING USEFUL.</h2>
-            <p class="contact-desc">Interested in scientific software, machine learning, research engineering, and biomedical AI opportunities.</p>
+            <h2 class="contact-title" data-i18n="contact.title">LET'S BUILD SOMETHING USEFUL.</h2>
+            <p class="contact-desc" data-i18n="contact.description">Interested in scientific software, machine learning, research engineering, and biomedical AI opportunities.</p>
             <div class="contact-actions">
-                <a href="mailto:ing.enrique_gomez@outlook.com" class="btn btn-primary">Send me an email</a>
+                <a href="mailto:ing.enrique_gomez@outlook.com" class="btn btn-primary" data-i18n="contact.email">Send me an email</a>
                 <span class="contact-email mono-text">ing.enrique_gomez@outlook.com</span>
             </div>
             <div class="contact-links mono-text">
@@ -232,7 +235,7 @@ currently:
     <footer>
         <div class="footer-content mono-text">
             <span>&copy; <span id="current-year"></span> Enrique Gómez.</span>
-            <span>Scientific Software Engineer.</span>
+            <span data-i18n="footer.role">Scientific Software Engineer.</span>
         </div>
     </footer>
 </body>

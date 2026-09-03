@@ -1,13 +1,15 @@
 function formatProfileLanguages(languages) {
     const languageNames = {
-        'Español': 'Spanish',
-        'Inglés': 'English',
-        'Chino mandarín': 'Mandarin Chinese'
+        'Español': i18nGet('profile.spanish') || (getCurrentLanguage() === 'es' ? 'Español' : 'Spanish'),
+        'Inglés': i18nGet('profile.english') || (getCurrentLanguage() === 'es' ? 'Inglés' : 'English'),
+        'Chino mandarín': i18nGet('profile.mandarin') || (getCurrentLanguage() === 'es' ? 'Chino mandarín' : 'Mandarin Chinese')
     };
 
     const proficiencyLevels = {
-        'Nativo': 'Native',
-        'Preparación para certificación HSK 1': 'Preparing for HSK 1 certification'
+        'Nativo': i18nGet('profile.native') || (getCurrentLanguage() === 'es' ? 'Nativo' : 'Native'),
+        'Preparación para certificación HSK 1': i18nGet('profile.hsk') || (getCurrentLanguage() === 'es'
+            ? 'Preparación para certificación HSK 1'
+            : 'Preparing for HSK 1 certification')
     };
 
     return languages
@@ -36,7 +38,7 @@ function hydrateEngineeringStack(skills) {
         const element = document.getElementById(elementId);
         const values = skills[field];
         if (element && Array.isArray(values) && values.length > 0) {
-            element.textContent = values.join(' · ');
+            element.textContent = values.map(value => localize(value)).join(' · ');
         }
     });
 }
@@ -58,7 +60,8 @@ function hydrateLanguages(languages) {
 
         const label = document.createElement('span');
         label.className = 'meta-label';
-        label.textContent = 'Languages';
+        label.dataset.i18n = 'about.languages';
+        label.textContent = i18nGet('about.languages') || (getCurrentLanguage() === 'es' ? 'Idiomas' : 'Languages');
 
         const value = document.createElement('span');
         value.className = 'meta-value';
@@ -98,7 +101,6 @@ async function loadProfileData() {
 
         return data;
     } catch (error) {
-        // Preserve all static HTML fallbacks if profile data cannot be loaded.
         console.warn('Profile data could not be loaded; using static fallbacks.', error);
         return null;
     }
